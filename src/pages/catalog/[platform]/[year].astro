@@ -1,0 +1,113 @@
+---
+import Base from "../../../layouts/Base.astro";
+import CatalogTable from "../../../components/CatalogTable.astro";
+import { loadCatalogIndex, loadCatalogYear } from "../../../lib/catalog";
+
+const { platform, year: yearParam } = Astro.params;
+const year = Number(yearParam);
+const index = await loadCatalogIndex(Astro.url.origin);
+const pf = index?.grades.find((p) => p.slug === platform);
+const pos = pf ? pf.years.findIndex(([y]) => y === year) : -1;
+if (!pf || pos < 0) return Astro.rewrite("/404");
+
+const rows = (await loadCatalogYear(pf.slug, year, Astro.url.origin)) ?? [];
+const prev = pf.years[pos - 1]?.[0];
+const next = pf.years[pos + 1]?.[0];
+const curatedCount = rows.filter((r) => r[4]).length;
+const yl = (y: number) => (y === 0 ? "年不明" : `${y}年`);
+const fmt = new Intl.NumberFormat("ja-JP");
+Astro.response.headers.set("Cache-Control", "public, max-age=3600");
+---
+
+<Base
+	title={`${pf.label}の全車種(${yl(year)})`}
+	description={`${year === 0 ? "初出の年が分からない" : `${year}年に初めて発売された`}${pf.label}のタミヤRCカー${fmt.format(rows.length)}車種の一覧。発売月・車種名・シャーシ。`}
+>
+	<header class="band intro">
+		<div class="frame">
+			<p class="eyebrow">
+				<a href="/catalog">全車種名簿</a> / <a href={`/catalog/${pf.slug}`}>{pf.label}</a> / {yl(year)}
+			</p>
+			<h1 class="intro__title">{pf.short} {yl(year)}の全車種</h1>
+			<p class="intro__lead">
+				{year === 0 ? `初出の年月が確かめられなかった${fmt.format(rows.length)}車種です。` : `${year}年に初めて発売された${fmt.format(rows.length)}車種です。`}{curatedCount > 0 && `そのうち${curatedCount}台は、このサイトで解説している厳選マシンです。`}
+			</p>
+			<div class="filter">
+				<label for="row-filter" class="sr-only">この年の一覧を絞り込む</label>
+				<input id="row-filter" type="search" placeholder="この年の一覧を絞り込む" autocomplete="off" />
+				<span class="filter__count" aria-live="polite"></span>
+			</div>
+		</div>
+	</header>
+
+	<section class="band section" aria-label={`${yl(year)}の一覧`}>
+		<div class="frame">
+			<CatalogTable rows={rows} />
+			<nav class="pager" aria-label="ほかの年">
+				{prev !== undefined ? <a href={`/catalog/${pf.slug}/${prev}`} class="btn btn--ghost btn--sm">← {yl(prev)}</a> : <span />}
+				<a href={`/catalog/${pf.slug}`} class="pager__up">{pf.label}の年一覧</a>
+				{next !== undefined ? <a href={`/catalog/${pf.slug}/${next}`} class="btn btn--ghost btn--sm">{yl(next)} →</a> : <span />}
+			</nav>
+		</div>
+	</section>
+</Base>
+
+<script>
+	const input = document.getElementById("row-filter") as HTMLInputElement | null;
+	const count = document.querySelector(".filter__count");
+	const rows = [...document.querySelectorAll<HTMLTableRowElement>(".ct tbody tr")];
+	input?.addEventListener("input", () => {
+		const q = input.value.normalize("NFKC").toLowerCase().replace(/\s+/g, "");
+		let shown = 0;
+		for (const row of rows) {
+			const hit = !q || (row.dataset.q ?? "").includes(q);
+			row.hidden = !hit;
+			if (hit) shown++;
+		}
+		if (count) count.textContent = q ? `${shown}件` : "";
+	});
+</script>
+
+<style>
+	.eyebrow a {
+		color: inherit;
+	}
+
+	.filter {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-3);
+		max-width: 480px;
+		margin-top: var(--spacing-5);
+	}
+
+	.filter input {
+		flex: 1;
+		min-width: 0;
+		padding: var(--spacing-2) var(--spacing-4);
+		border: 0;
+		border-radius: var(--radius-full);
+		background: var(--color-surface);
+		box-shadow: inset 0 0 0 1px var(--color-border-strong);
+		font: inherit;
+		color: var(--color-text);
+	}
+
+	.filter__count {
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+	}
+
+	.pager {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--spacing-3);
+		margin-top: var(--spacing-6);
+	}
+
+	.pager__up {
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+	}
+</style>

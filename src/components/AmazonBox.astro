@@ -1,0 +1,120 @@
+---
+import type { AmazonLink } from "../lib/amazon";
+
+interface Props {
+	title?: string;
+	/** メインのリンク(マシン) */
+	primary?: AmazonLink | null;
+	/** 補助のリンク(パーツ・道具) */
+	links?: AmazonLink[];
+	compact?: boolean;
+}
+
+const { title = "Amazonで探す", primary = null, links = [], compact = false } = Astro.props;
+const hasAny = primary || links.length > 0;
+---
+
+{
+	hasAny && (
+		<aside class:list={["amazon", compact && "amazon--compact"]} aria-label={title}>
+			<p class="amazon__head">
+				<span class="amazon__pr">PR</span>
+				<span class="amazon__title">{title}</span>
+			</p>
+			<div class="amazon__links">
+				{primary && (
+					<a href={primary.url} class="amazon__btn amazon__btn--primary" rel="sponsored noopener" target="_blank">
+						{primary.label}
+						<span aria-hidden="true">↗</span>
+					</a>
+				)}
+				{links.map((link) => (
+					<a href={link.url} class="amazon__btn" rel="sponsored noopener" target="_blank">
+						{link.label}
+						<span aria-hidden="true">↗</span>
+					</a>
+				))}
+			</div>
+			{!compact && (
+				<p class="amazon__note">
+					Amazonの検索結果ページが開きます。価格・在庫はリンク先でご確認ください。再販の時期によっては品切れのこともあります。
+				</p>
+			)}
+		</aside>
+	)
+}
+
+<style>
+	.amazon {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-3);
+		padding: var(--spacing-5);
+		background: var(--color-surface);
+		border-radius: var(--radius-xl);
+		box-shadow: inset 0 0 0 1px var(--color-border);
+	}
+
+	.amazon__head {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-2);
+		font-size: var(--font-size-sm);
+		font-weight: 600;
+	}
+
+	.amazon__pr {
+		padding: 0 0.4rem;
+		border-radius: var(--radius-sm);
+		background: var(--color-fill);
+		font-family: var(--font-mono);
+		font-size: 0.6875rem;
+		font-weight: 500;
+		letter-spacing: 0.05em;
+		color: var(--color-muted);
+	}
+
+	.amazon__links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-2);
+	}
+
+	.amazon__btn {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--spacing-2);
+		min-height: 2.5rem;
+		padding: var(--spacing-2) var(--spacing-4);
+		border-radius: var(--radius-full);
+		box-shadow: inset 0 0 0 1px var(--color-border-strong);
+		font-size: var(--font-size-sm);
+		font-weight: 500;
+		color: var(--color-text);
+		text-decoration: none;
+		transition: box-shadow var(--transition-fast), background var(--transition-fast);
+	}
+
+	.amazon__btn:hover {
+		background: var(--color-fill);
+	}
+
+	.amazon__btn--primary {
+		background: var(--color-brand);
+		box-shadow: none;
+		color: var(--color-on-brand);
+	}
+
+	.amazon__btn--primary:hover {
+		background: var(--color-brand-hover);
+	}
+
+	.amazon__note {
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.amazon--compact {
+		padding: var(--spacing-4);
+	}
+</style>

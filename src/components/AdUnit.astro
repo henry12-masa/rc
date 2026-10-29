@@ -1,0 +1,60 @@
+---
+import { AD_CLIENT, AD_SLOTS } from "../lib/ads";
+
+interface Props {
+	kind: "side" | "article";
+	class?: string;
+}
+const { kind, class: className } = Astro.props;
+---
+
+<aside class:list={["ad", `ad--${kind}`, className]} aria-label="広告">
+	<p class="ad__label">広告</p>
+	{
+		kind === "article" ? (
+			<ins
+				class="adsbygoogle"
+				style="display:block; text-align:center;"
+				data-ad-layout="in-article"
+				data-ad-format="fluid"
+				data-ad-client={AD_CLIENT}
+				data-ad-slot={AD_SLOTS.article}
+			/>
+		) : (
+			<ins
+				class="adsbygoogle"
+				style="display:block"
+				data-ad-client={AD_CLIENT}
+				data-ad-slot={AD_SLOTS.side}
+				data-ad-format="auto"
+				data-full-width-responsive="true"
+			/>
+		)
+	}
+	<script is:inline>
+		(window.adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</aside>
+
+<style>
+	.ad {
+		min-width: 0;
+		margin-block: var(--spacing-8);
+	}
+
+	.ad--side {
+		margin-block: 0;
+	}
+
+	.ad__label {
+		margin: 0 0 var(--spacing-2);
+		font-size: var(--font-size-xs);
+		text-align: center;
+		color: var(--color-muted);
+	}
+
+	.ad ins {
+		width: 100%;
+		max-width: 100%;
+	}
+</style>

@@ -1,0 +1,105 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="プライバシーポリシー" description="操り継ぐのプライバシーポリシー(個人情報、Cookie、広告配信、免責事項)">
+	<header class="band intro">
+		<div class="frame">
+			<p class="eyebrow">Privacy Policy</p>
+			<h1 class="intro__title">プライバシーポリシー</h1>
+		</div>
+	</header>
+
+	<section class="band section">
+		<div class="frame">
+			<div class="prose policy">
+				<h2>個人情報の取得について</h2>
+				<p>
+					当サイトでは、閲覧のみであれば氏名やメールアドレスなどの個人情報をご提供いただく必要はありません。お問い合わせ等で個人情報をご提供いただいた場合は、その対応のためにのみ利用し、法令に基づく場合を除き第三者に提供することはありません。
+				</p>
+
+				<h2>Cookieについて</h2>
+				<p>
+					当サイトでは、表示設定(ライト/ダークモード)の保存や、広告配信のためにCookieを使用しています。Cookieはブラウザの設定により無効にできますが、その場合は一部の機能が正しく動作しないことがあります。
+				</p>
+
+				<h2>広告の配信について</h2>
+				<p>
+					当サイトは、第三者配信の広告サービス「Google AdSense」を利用しています。Googleなどの第三者配信事業者は、Cookieを使用して、ユーザーが当サイトや他のウェブサイトに過去にアクセスした際の情報に基づいて広告を配信します。
+				</p>
+				<p>
+					Googleが広告Cookieを使用することにより、ユーザーが当サイトや他のサイトにアクセスした際の情報に基づいて、Googleやそのパートナーが適切な広告を表示できます。ユーザーは
+					<a href="https://www.google.com/settings/ads" rel="noopener" target="_blank">広告設定</a>
+					でパーソナライズ広告を無効にできます。また、
+					<a href="https://www.aboutads.info/choices/" rel="noopener" target="_blank">www.aboutads.info</a>
+					にアクセスすれば、第三者配信事業者がパーソナライズ広告の掲載で使用するCookieを無効にできます。詳しくは
+					<a href="https://policies.google.com/technologies/ads?hl=ja" rel="noopener" target="_blank">Googleの広告に関するポリシー</a>
+					をご覧ください。
+				</p>
+
+				<h2>Amazonアソシエイト・プログラムについて</h2>
+				<p>
+					当サイトは、Amazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。Amazonのアソシエイトとして、操り継ぐは適格販売により収入を得ています。
+				</p>
+				<p>
+					マシンページ・シャーシガイド・全車種名簿に表示している「PR」と書かれたAmazonへのリンクは広告です。リンク先はAmazonの検索結果ページで、価格・在庫などの最新の情報はリンク先でご確認ください。
+				</p>
+
+				<h2>アクセス解析について</h2>
+				<p>
+					当サイトでは、サイトの改善のためにアクセス状況を集計することがあります。集計データは匿名で収集されており、個人を特定するものではありません。
+				</p>
+
+				<h2>免責事項</h2>
+				<p>
+					当サイトに掲載している発売年月・シャーシなどの情報は、できる限り正確を期していますが、その正確性や完全性を保証するものではありません。当サイトの情報を利用したことで生じた損害について、一切の責任を負いかねます。誤りにお気づきの場合はお知らせください。
+				</p>
+				<p>
+					当サイトからリンクしている外部サイトの内容について、当サイトは責任を負いません。
+				</p>
+
+				<h2>著作権について</h2>
+				<p>
+					当サイトの文章の著作権は当サイトに帰属します。商品名・作品名・会社名は各社の商標または登録商標です。当サイトはファンによる非公式のサイトで、株式会社タミヤとは関係ありません。全車種名簿の車種の一覧は日本語版ウィキペディアの記事をもとにしており、CC BY-SA 4.0 ライセンスに従って出典を表示しています。
+				</p>
+
+				<h2>本ポリシーの変更</h2>
+				<p>
+					本ポリシーの内容は、必要に応じて予告なく変更することがあります。変更後のポリシーは、本ページに掲載した時点から効力を生じます。
+				</p>
+
+				<p class="policy__date">制定日:2026年10月22日</p>
+			</div>
+		</div>
+	</section>
+</Base>
+
+<style>
+	.policy {
+		max-width: var(--content-width);
+	}
+
+	.policy h2 {
+		margin-top: var(--spacing-10);
+		margin-bottom: var(--spacing-3);
+		font-size: var(--font-size-xl);
+	}
+
+	.policy h2:first-child {
+		margin-top: 0;
+	}
+
+	.policy p + p {
+		margin-top: var(--spacing-3);
+	}
+
+	.policy p {
+		line-height: 1.9;
+		color: var(--color-text-secondary);
+	}
+
+	.policy__date {
+		margin-top: var(--spacing-10) !important;
+		font-size: var(--font-size-sm);
+	}
+</style>

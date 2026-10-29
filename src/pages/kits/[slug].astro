@@ -1,0 +1,440 @@
+---
+import { PortableText, Image } from "emdash/ui";
+import Base from "../../layouts/Base.astro";
+import KitCard from "../../components/KitCard.astro";
+import AmazonBox from "../../components/AmazonBox.astro";
+import AdUnit from "../../components/AdUnit.astro";
+import { splitAtHeading } from "../../lib/ads";
+import { amazonForGame, gradeInfo, toolLinks } from "../../lib/amazon";
+import { TIERS, eraBySlug, formatReleased, kitsUrl, loadGames, relatedGames } from "../../lib/kits";
+
+const { slug } = Astro.params;
+const { games, cacheHint } = await loadGames();
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+
+const index = games.findIndex((g) => g.slug === slug);
+if (index === -1) return Astro.rewrite("/404");
+const game = games[index];
+
+const era = eraBySlug(game.era?.slug);
+const related = relatedGames(game, games);
+const sameYear = games.filter((g) => g.year === game.year && g.slug !== game.slug);
+const prev = games[index - 1];
+const next = games[index + 1];
+const hasContent = Array.isArray(game.content) && game.content.length > 0;
+// 本文の2つ目の見出しの前に記事内広告を挟む
+const [contentHead, contentTail] = hasContent ? splitAtHeading(game.content as any[]) : [[], []];
+const amazonKit = amazonForGame(game);
+// 同じグレードの一覧と、作るための道具
+const grade = game.grades[0] ? gradeInfo(game.grades[0].slug) : null;
+const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().slice(0, 2)];
+---
+
+<Base
+	title={game.title}
+	description={game.summary}
+	type="article"
+	content={{ collection: "kits", id: game.id, slug: game.slug }}
+>
+	<header class="band intro" data-era={game.era?.slug}>
+		<div class="frame game-head">
+			<div class="game-head__text">
+				<p class="eyebrow">
+					<a href="/kits">Machines</a> / {era && <a href={kitsUrl({ era: era.slug })}>{era.short}</a>}
+				</p>
+				<h1 class="intro__title game-head__title">{game.title}</h1>
+				{game.model && <p class="game-head__en">{game.model}</p>}
+				<p class="intro__lead">{game.summary}</p>
+			</div>
+			<div class="game-head__cover">
+				{
+					game.cover ? (
+						<Image image={game.cover as any} priority sizes="(min-width: 900px) 360px, 100vw" />
+					) : (
+						<div class="cover-tile" aria-hidden="true">
+							<span class="cover-tile__year">{game.year}</span>
+							<span class="cover-tile__title">{game.model || game.grades[0]?.label}</span>
+							<span class="cover-tile__dev">{[game.grades[0]?.slug.toUpperCase(), game.scale].filter(Boolean).join(" · ")}</span>
+						</div>
+					)
+				}
+			</div>
+		</div>
+	</header>
+
+	<section class="band section">
+		<div class="frame game-body">
+			<div class="game-side">
+			<dl class="facts">
+				<div>
+					<dt>推し度</dt>
+					<dd>
+						<a href={kitsUrl({ tier: game.tier })} class:list={["tier", `tier--${game.tier}`]}>
+							{TIERS[game.tier]}
+						</a>
+					</dd>
+				</div>
+				<div>
+					<dt>初出</dt>
+					<dd><a href={`/timeline#y${game.year}`}>{formatReleased(game)}</a></dd>
+				</div>
+				{
+					game.scale && (
+						<div>
+							<dt>スケール</dt>
+							<dd>{game.scale}</dd>
+						</div>
+					)
+				}
+				{
+					game.model && (
+						<div>
+							<dt>品番</dt>
+							<dd>{game.model}</dd>
+						</div>
+					)
+				}
+				<div>
+					<dt>年代</dt>
+					<dd>{era && <a href={kitsUrl({ era: era.slug })}>{era.label}</a>}</dd>
+				</div>
+				<div>
+					<dt>カテゴリ</dt>
+					<dd>
+						<ul class="chips">
+							{game.grades.map((g) => (
+								<li><a href={kitsUrl({ grade: g.slug })} class="chip">{g.label}</a></li>
+							))}
+						</ul>
+					</dd>
+				</div>
+				<div>
+					<dt>シャーシ</dt>
+					<dd>
+						<ul class="chips">
+							{game.series.map((p) => (
+								<li><a href={kitsUrl({ series: p.slug })} class="chip">{p.label}</a></li>
+							))}
+						</ul>
+						<p class="facts__note"><a href="/chassis">シャーシガイド</a> · <a href={`/catalog/${game.grades[0]?.slug ?? ""}`}>全車種名簿</a></p>
+					</dd>
+				</div>
+				{
+					game.officialUrl && (
+						<div>
+							<dt>公式</dt>
+							<dd><a href={game.officialUrl} rel="noopener" target="_blank">公式サイト ↗</a></dd>
+						</div>
+					)
+				}
+			</dl>
+			<AdUnit kind="side" class="game-side__ad" />
+			</div>
+
+			<div class="game-main">
+				{
+					game.note && (
+						<figure class="curator">
+							<figcaption class="eyebrow">キュレーターの一言</figcaption>
+							<blockquote>{game.note}</blockquote>
+						</figure>
+					)
+				}
+				{
+					hasContent && (
+						<section class="review" aria-labelledby="review-heading">
+							<h2 id="review-heading" class="sub-title">解説</h2>
+							<div class="prose">
+								<PortableText value={contentHead} />
+								<AdUnit kind="article" />
+								{contentTail.length > 0 && <PortableText value={contentTail} />}
+							</div>
+						</section>
+					)
+				}
+				<AmazonBox
+					title={amazonKit ? `『${game.title}』をAmazonで探す` : "Amazonで探す"}
+					primary={amazonKit}
+					links={extraLinks}
+				/>
+				{
+					sameYear.length > 0 && (
+						<div class="same-year">
+							<h2 class="sub-title">{game.year}年のほかのマシン</h2>
+							<ul class="chips">
+								{sameYear.map((g) => (
+									<li><a href={`/kits/${g.slug}`} class="chip">{g.title}</a></li>
+								))}
+							</ul>
+						</div>
+					)
+				}
+			</div>
+		</div>
+	</section>
+
+	{
+		related.length > 0 && (
+			<section class="band section" aria-labelledby="related-heading">
+				<div class="frame">
+					<div class="section-head">
+						<div>
+							<h2 id="related-heading" class="section-head__title">あわせて作りたい</h2>
+							<p class="section-head__sub">同じシャーシ・同じカテゴリのマシンを、発売の古い順に。</p>
+						</div>
+					</div>
+					<div class="game-grid">
+						{related.map((g) => <KitCard game={g} />)}
+					</div>
+				</div>
+			</section>
+		)
+	}
+
+	<nav class="band section" aria-label="前後のマシン">
+		<div class="frame pager">
+			{prev ? (
+				<a href={`/kits/${prev.slug}`} class="pager__link">
+					<span class="eyebrow">← ひとつ古い</span>
+					<span>{prev.title}<small>({prev.year})</small></span>
+				</a>
+			) : <span />}
+			{next && (
+				<a href={`/kits/${next.slug}`} class="pager__link pager__link--next">
+					<span class="eyebrow">ひとつ新しい →</span>
+					<span>{next.title}<small>({next.year})</small></span>
+				</a>
+			)}
+		</div>
+	</nav>
+</Base>
+
+<style>
+	.game-head {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
+		align-items: center;
+		gap: var(--spacing-10);
+	}
+
+	.eyebrow a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.eyebrow a:hover {
+		color: var(--color-text);
+	}
+
+	.game-head__title {
+		max-width: none;
+		font-size: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+		line-height: 1.2;
+	}
+
+	.game-head__en {
+		margin-top: var(--spacing-2);
+		font-family: var(--font-mono);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+	}
+
+	.game-head__cover :global(img),
+	.cover-tile {
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		border-radius: var(--radius-xl);
+		object-fit: cover;
+		box-shadow: var(--shadow-card);
+	}
+
+	.cover-tile {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: var(--spacing-6);
+		color: var(--era-ink);
+		background:
+			repeating-linear-gradient(
+				0deg,
+				transparent 0 3px,
+				color-mix(in oklab, var(--era-ink) 7%, transparent) 3px 4px
+			),
+			var(--era-bg);
+		font-family: var(--font-mono);
+	}
+
+	.cover-tile__year {
+		font-size: 3.5rem;
+		line-height: 1;
+		font-weight: 500;
+	}
+
+	.cover-tile__title {
+		font-size: var(--font-size-sm);
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+	}
+
+	.cover-tile__dev {
+		font-size: var(--font-size-xs);
+		opacity: 0.7;
+	}
+
+	.game-body {
+		display: grid;
+		grid-template-columns: 260px minmax(0, 1fr);
+		gap: var(--spacing-10);
+		align-items: start;
+	}
+
+	.game-side {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-8);
+		align-self: stretch;
+	}
+
+	.game-side__ad {
+		position: sticky;
+		top: var(--spacing-6);
+	}
+
+	.facts {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-4);
+		padding: var(--spacing-5);
+		background: var(--color-surface);
+		border-radius: var(--radius-xl);
+		box-shadow: var(--shadow-card);
+	}
+
+	.facts dt {
+		margin-bottom: var(--spacing-1);
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.facts dd {
+		margin: 0;
+		font-size: var(--font-size-sm);
+	}
+
+	.facts dd a:not(.chip):not(.tier) {
+		color: var(--color-text);
+	}
+
+	.facts .chips {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-1);
+	}
+
+	.facts__note {
+		margin-top: var(--spacing-2);
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.tier {
+		text-decoration: none;
+	}
+
+	.game-main {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-8);
+		max-width: var(--content-width);
+	}
+
+	.curator {
+		margin: 0;
+		padding: var(--spacing-6) var(--spacing-8);
+		border-inline-start: 4px solid var(--color-brand);
+		background: var(--color-surface);
+		border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+	}
+
+	.curator blockquote {
+		margin: var(--spacing-3) 0 0;
+		font-size: var(--font-size-xl);
+		font-weight: 500;
+		line-height: 1.7;
+	}
+
+	.review :global(p) {
+		font-size: var(--font-size-base);
+		line-height: 1.95;
+		color: var(--color-text);
+	}
+
+	.review :global(p + p) {
+		margin-top: var(--spacing-4);
+	}
+
+	.sub-title {
+		margin-bottom: var(--spacing-3);
+		font-size: var(--font-size-lg);
+	}
+
+	.same-year .chips {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-2);
+	}
+
+	.section-head__sub {
+		margin-top: var(--spacing-1);
+		font-size: var(--font-size-sm);
+		color: var(--color-text-secondary);
+	}
+
+	.pager {
+		display: flex;
+		justify-content: space-between;
+		gap: var(--spacing-4);
+	}
+
+	.pager__link {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-1);
+		max-width: 48%;
+		color: var(--color-text);
+		text-decoration: none;
+	}
+
+	.pager__link:hover span:last-child {
+		color: var(--color-brand);
+	}
+
+	.pager__link--next {
+		margin-left: auto;
+		text-align: end;
+	}
+
+	.pager__link small {
+		margin-left: var(--spacing-1);
+		color: var(--color-muted);
+	}
+
+	@media (max-width: 860px) {
+		.game-head,
+		.game-body {
+			grid-template-columns: minmax(0, 1fr);
+			gap: var(--spacing-6);
+		}
+
+		.game-head__cover {
+			max-width: 360px;
+		}
+
+		/* 1列のときは本文中の広告だけにする */
+		.game-side__ad {
+			display: none;
+		}
+	}
+</style>

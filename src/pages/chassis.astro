@@ -1,0 +1,275 @@
+---
+import Base from "../layouts/Base.astro";
+import AmazonBox from "../components/AmazonBox.astro";
+import { GRADES, SERIES, kitsUrl, loadGames } from "../lib/kits";
+import { chassisInfo, gradeInfo, toolLinks } from "../lib/amazon";
+
+const { games, cacheHint } = await loadGames();
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint);
+
+const pick = (list: typeof games) => {
+	const essentials = list.filter((g) => g.tier === "essential");
+	return (essentials.length ? essentials : list).slice(0, 4);
+};
+
+// カテゴリ(定義順)
+const lines = Object.entries(GRADES)
+	.map(([slug, label]) => {
+		const info = gradeInfo(slug);
+		const list = games.filter((g) => g.grades.some((p) => p.slug === slug));
+		return info ? { slug, label, info, count: list.length, picks: pick(list) } : null;
+	})
+	.filter((x): x is NonNullable<typeof x> => !!x);
+
+// シャーシ(定義順=おおよそ登場順)
+const chassis = Object.entries(SERIES)
+	.map(([slug, label]) => {
+		const info = chassisInfo(slug);
+		const list = games.filter((g) => g.series.some((p) => p.slug === slug));
+		return info ? { slug, label, info, count: list.length, picks: pick(list) } : null;
+	})
+	.filter((x): x is NonNullable<typeof x> => !!x && (x.count > 0 || x.slug !== "other"));
+---
+
+<Base title="シャーシガイド" description="初期の専用シャーシからTT-02・TA08・CC-02・BB-01まで、タミヤのRCカーのシャーシとカテゴリの違い、代表的なマシンをまとめたガイド。">
+	<header class="band intro">
+		<div class="frame">
+			<p class="eyebrow">Chassis &amp; Series</p>
+			<h1 class="intro__title">シャーシガイド</h1>
+			<p class="intro__lead">
+				タミヤのRCカーは、ボディの下にある「シャーシ」で駆動方式や走れる場所、整備のしやすさが大きく変わります。同じシャーシにいろいろなボディが載るので、シャーシを知ると次の1台を選びやすくなります。シャーシの移り変わりと、それぞれのカテゴリの特徴、代表的なマシンをまとめました。説明は日本語版ウィキペディアの各シャーシの記事と、タミヤ公式サイトの商品ページをもとにしています。
+			</p>
+		</div>
+	</header>
+
+	<nav class="band hw-nav" aria-label="ガイドの中を移動">
+		<div class="frame">
+			<ul>
+				<li><a href="#chassis">シャーシ</a></li>
+				<li><a href="#lines">カテゴリ</a></li>
+				<li><a href="#tools">走らせる道具</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="band section" id="chassis" aria-labelledby="chassis-h">
+		<div class="frame">
+			<h2 id="chassis-h" class="group-title">シャーシ</h2>
+			<p class="group-note">おおよそ登場した順に並べています。</p>
+			<div class="hw-grid">
+				{chassis.map(({ slug, label, info, count, picks }) => (
+					<article class="hw" id={slug}>
+						<header class="hw__head">
+							<h3 class="hw__name">{label}シャーシ</h3>
+							{info.first && <p class="hw__meta">最初の採用車種:{info.first}</p>}
+						</header>
+						<p class="hw__desc">{info.desc}</p>
+						{picks.length > 0 && (
+							<p class="hw__picks">
+								このシャーシのマシン:
+								{picks.map((g, i) => (
+									<>
+										{i > 0 && "、"}
+										<a href={`/kits/${g.slug}`}>{g.title}</a>
+									</>
+								))}
+							</p>
+						)}
+						{count > 0 && (
+							<div class="hw__actions">
+								<a href={kitsUrl({ series: slug })} class="btn btn--ghost btn--sm">厳選 {count}台</a>
+							</div>
+						)}
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="band section" id="lines" aria-labelledby="lines-h">
+		<div class="frame">
+			<h2 id="lines-h" class="group-title">カテゴリ</h2>
+			<p class="group-note">走らせる場所や楽しみ方で分けたカテゴリです。年はそのカテゴリのマシンが初めて出た年です。</p>
+			<div class="hw-grid">
+				{lines.map(({ slug, label, info, count, picks }) => (
+					<article class="hw" id={slug}>
+						<header class="hw__head">
+							<h3 class="hw__name">{label}</h3>
+							{info.since && <p class="hw__meta">{info.since}年から</p>}
+						</header>
+						<p class="hw__desc">{info.desc}</p>
+						<p class="hw__note">{info.tip}</p>
+						{picks.length > 0 && (
+							<p class="hw__picks">
+								代表的なマシン:
+								{picks.map((g, i) => (
+									<>
+										{i > 0 && "、"}
+										<a href={`/kits/${g.slug}`}>{g.title}</a>
+									</>
+								))}
+							</p>
+						)}
+						<div class="hw__actions">
+							{count > 0 && (
+								<a href={kitsUrl({ grade: slug })} class="btn btn--ghost btn--sm">厳選 {count}台</a>
+							)}
+							<a href={`/catalog/${slug}`} class="btn btn--ghost btn--sm">全車種名簿</a>
+							{info.amazon && (
+								<a href={info.amazon.url} class="hw__amazon" rel="sponsored noopener" target="_blank">
+									<span class="pr">PR</span>
+									{info.amazon.label} ↗
+								</a>
+							)}
+						</div>
+					</article>
+				))}
+			</div>
+		</div>
+	</section>
+
+	<section class="band section" id="tools" aria-labelledby="tools-h">
+		<div class="frame">
+			<h2 id="tools-h" class="group-title">走らせる道具</h2>
+			<p class="group-note">多くのキットは、送信機・受信機・スピードコントローラー・サーボといったRCメカと、走行用のバッテリー・充電器が別売りです。キットの「別にお求めいただくもの」を確かめてからそろえましょう。</p>
+			<AmazonBox title="プロポ・バッテリー・工具をAmazonで探す" links={toolLinks()} />
+		</div>
+	</section>
+</Base>
+
+<style>
+	.hw-nav {
+		position: sticky;
+		top: var(--header-height, var(--nav-height));
+		z-index: 5;
+		background: color-mix(in oklab, var(--color-bg) 88%, transparent);
+		backdrop-filter: blur(8px);
+	}
+
+	.hw-nav ul {
+		list-style: none;
+		display: flex;
+		gap: var(--spacing-1);
+		padding-block: var(--spacing-3);
+		overflow-x: auto;
+		scrollbar-width: none;
+	}
+
+	.hw-nav a {
+		display: inline-block;
+		padding: var(--spacing-1) var(--spacing-3);
+		border-radius: var(--radius-full);
+		font-size: var(--font-size-sm);
+		white-space: nowrap;
+		color: var(--color-text-secondary);
+		text-decoration: none;
+	}
+
+	.hw-nav a:hover {
+		background: var(--color-surface);
+		color: var(--color-text);
+	}
+
+	section[id] {
+		scroll-margin-top: calc(var(--header-height, var(--nav-height)) + 56px);
+	}
+
+	.group-title {
+		margin-bottom: var(--spacing-5);
+		font-size: var(--font-size-2xl);
+	}
+
+	.hw-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+		gap: var(--spacing-4);
+	}
+
+	.hw {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-3);
+		padding: var(--spacing-5);
+		background: var(--color-surface);
+		border-radius: var(--radius-xl);
+		box-shadow: var(--shadow-card);
+		scroll-margin-top: calc(var(--header-height, var(--nav-height)) + 64px);
+	}
+
+	.hw__name {
+		font-size: var(--font-size-xl);
+	}
+
+	.hw__meta {
+		margin-top: var(--spacing-1);
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.hw__note {
+		margin-top: var(--spacing-1);
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.hw__desc {
+		font-size: var(--font-size-sm);
+		line-height: 1.8;
+		color: var(--color-text-secondary);
+	}
+
+	.hw__picks {
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.hw__picks a {
+		color: var(--color-text);
+	}
+
+	.hw__actions {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: var(--spacing-2);
+		margin-top: auto;
+	}
+
+	.hw__amazon {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--spacing-2);
+		min-height: 2rem;
+		padding: var(--spacing-1) var(--spacing-3);
+		border-radius: var(--radius-full);
+		background: var(--color-brand);
+		color: var(--color-on-brand);
+		font-size: var(--font-size-xs);
+		font-weight: 500;
+		text-decoration: none;
+	}
+
+	.hw__amazon:hover {
+		background: var(--color-brand-hover);
+	}
+
+	.pr {
+		padding: 0 0.3rem;
+		border-radius: 3px;
+		background: color-mix(in oklab, var(--color-on-brand) 22%, transparent);
+		font-family: var(--font-mono);
+		font-size: 0.625rem;
+		letter-spacing: 0.05em;
+	}
+
+	.group-note {
+		margin: calc(var(--spacing-2) * -1) 0 var(--spacing-5);
+		color: var(--color-text-secondary);
+		font-size: var(--font-size-sm);
+	}
+
+	.level {
+		letter-spacing: 0.05em;
+		color: var(--color-brand);
+	}
+</style>

@@ -1,0 +1,389 @@
+---
+import { getEmDashCollection, getSiteSettings } from "emdash";
+import Base from "../layouts/Base.astro";
+import KitCard from "../components/KitCard.astro";
+import { ERAS, GRADES, SERIES, kitsUrl, loadGames } from "../lib/kits";
+import { resolveBlogSiteIdentity } from "../utils/site-identity";
+
+const [{ games, cacheHint }, { entries: posts, cacheHint: postsHint }, settings] =
+	await Promise.all([
+		loadGames(),
+		getEmDashCollection("posts", { orderBy: { published_at: "desc" }, limit: 3 }),
+		getSiteSettings(),
+	]);
+const { siteTitle, siteTagline } = resolveBlogSiteIdentity(settings);
+
+if (Astro.cache?.enabled) {
+	Astro.cache.set(cacheHint);
+	Astro.cache.set(postsHint);
+}
+
+// 年代ごとの掲載数と代表作(定番の先頭3件)
+const eras = ERAS.map((era) => {
+	const inEra = games.filter((g) => g.era?.slug === era.slug);
+	const picks = inEra.filter((g) => g.tier === "essential");
+	return { era, count: inEra.length, picks: picks.slice(0, 3) };
+});
+
+// 各年代の定番から1件ずつ:「時代の答え」
+const canon = eras
+	.map(({ era }) => games.filter((g) => g.era?.slug === era.slug && g.tier === "essential"))
+	.map((list) => list[Math.floor(list.length / 2)])
+	.filter(Boolean);
+
+const latest = [...games].sort((a, b) => b.released.localeCompare(a.released)).slice(0, 8);
+const firstYear = games[0]?.year;
+const lastYear = games.at(-1)?.year;
+
+// グレードごとの掲載数
+const genreCounts = Object.entries(GRADES)
+	.map(([slug, label]) => ({
+		slug,
+		label,
+		count: games.filter((g) => g.grades.some((x) => x.slug === slug)).length,
+	}))
+	.filter((g) => g.count > 0);
+
+// 掲載数の多い作品
+const seriesCounts = Object.entries(SERIES)
+	.map(([slug, label]) => ({
+		slug,
+		label,
+		count: games.filter((g) => g.series.some((x) => x.slug === slug)).length,
+	}))
+	.filter((g) => g.count > 0)
+	.sort((a, b) => b.count - a.count);
+---
+
+<Base title={siteTitle} description={siteTagline}>
+	<header class="band intro">
+		<div class="frame hero">
+			<div>
+				<p class="eyebrow">RC Car Curation · {firstYear}–{lastYear}</p>
+				<h1 class="intro__title hero__title">
+					あのマシンを、<br />次の誰かへ。
+				</h1>
+				<p class="intro__lead">{siteTagline}</p>
+				<div class="hero__actions">
+					<a href="/kits" class="btn">マシン一覧を見る</a>
+					<a href="/chassis" class="btn btn--ghost">シャーシガイド</a>
+					<a href="/timeline" class="btn btn--ghost">年表でたどる</a>
+					<a href="/catalog" class="btn btn--ghost">全車種名簿</a>
+				</div>
+			</div>
+			<dl class="stats">
+				<div><dt>厳選マシン</dt><dd>{games.length}<small>台</small></dd></div>
+				<div><dt>年代</dt><dd>{ERAS.length}<small>区分</small></dd></div>
+				<div><dt>カテゴリ</dt><dd>{genreCounts.length}</dd></div>
+				<div><dt>シャーシ</dt><dd>{seriesCounts.length}</dd></div>
+			</dl>
+		</div>
+	</header>
+
+	<section class="band section" aria-labelledby="eras-heading">
+		<div class="frame">
+			<div class="section-head">
+				<h2 id="eras-heading" class="section-head__title">年代から探す</h2>
+				<a href="/timeline" class="arrow-link">年表へ →</a>
+			</div>
+			<ol class="eras">
+				{
+					eras.map(({ era, count, picks }) => (
+						<li class="era" data-era={era.slug}>
+							<a href={kitsUrl({ era: era.slug })} class="era__link">
+								<span class="era__range">
+									{era.to >= 2100 ? `${era.from}〜` : `${era.from}–${era.to}`}
+								</span>
+								<span class="era__name">{era.short}</span>
+								<span class="era__count">{count}台</span>
+							</a>
+							<p class="era__lead">{era.lead}</p>
+							{picks.length > 0 && (
+								<p class="era__picks">
+									定番:
+									{picks.map((g, i) => (
+										<>
+											{i > 0 && "、"}
+											<a href={`/kits/${g.slug}`}>{g.title}</a>
+										</>
+									))}
+								</p>
+							)}
+						</li>
+					))
+				}
+			</ol>
+		</div>
+	</section>
+
+	<section class="band section" aria-labelledby="canon-heading">
+		<div class="frame">
+			<div class="section-head">
+				<div>
+					<h2 id="canon-heading" class="section-head__title">時代の答え</h2>
+					<p class="section-head__sub">各年代の「定番」から1台ずつ。古い順に並べると、タミヤRCの進化がひと目でわかります。</p>
+				</div>
+				<a href={kitsUrl({ tier: "essential" })} class="arrow-link">定番をすべて見る →</a>
+			</div>
+			<div class="game-grid">
+				{canon.map((game) => <KitCard game={game} />)}
+			</div>
+		</div>
+	</section>
+
+	<section class="band section" aria-labelledby="latest-heading">
+		<div class="frame">
+			<div class="section-head">
+				<h2 id="latest-heading" class="section-head__title">新しいマシン</h2>
+				<a href={kitsUrl({ sort: "new" })} class="arrow-link">新しい順に一覧 →</a>
+			</div>
+			<div class="game-grid">
+				{latest.map((game) => <KitCard game={game} />)}
+			</div>
+		</div>
+	</section>
+
+	{
+		posts.length > 0 && (
+			<section class="band section" aria-labelledby="features-heading">
+				<div class="frame">
+					<div class="section-head">
+						<h2 id="features-heading" class="section-head__title">特集</h2>
+						<a href="/posts" class="arrow-link">すべての特集 →</a>
+					</div>
+					<ul class="features">
+						{posts.map((post) => (
+							<li>
+								<a href={`/posts/${post.id}`} class="feature">
+									<span class="feature__title">{post.data.title}</span>
+									{post.data.excerpt && (
+										<span class="feature__excerpt">{post.data.excerpt}</span>
+									)}
+								</a>
+							</li>
+						))}
+					</ul>
+				</div>
+			</section>
+		)
+	}
+
+	<section class="band section" aria-labelledby="genres-heading">
+		<div class="frame">
+			<div class="section-head">
+				<h2 id="genres-heading" class="section-head__title">カテゴリから探す</h2>
+				<a href="/chassis" class="arrow-link">シャーシガイドへ →</a>
+			</div>
+			<ul class="chips genre-cloud">
+				{
+					genreCounts.map((g) => (
+						<li>
+							<a href={kitsUrl({ grade: g.slug })} class="chip">
+								{g.label} <span class="count">{g.count}</span>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</section>
+
+	<section class="band section" aria-labelledby="series-heading">
+		<div class="frame">
+			<div class="section-head">
+				<h2 id="series-heading" class="section-head__title">シャーシから探す</h2>
+			</div>
+			<ul class="chips genre-cloud">
+				{
+					seriesCounts.map((g) => (
+						<li>
+							<a href={kitsUrl({ series: g.slug })} class="chip">
+								{g.label} <span class="count">{g.count}</span>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</div>
+	</section>
+</Base>
+
+<style>
+	.hero {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: end;
+		gap: var(--spacing-8);
+	}
+
+	.hero__title {
+		max-width: none;
+	}
+
+	.hero__actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-3);
+		margin-top: var(--spacing-6);
+	}
+
+	.stats {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(7rem, 1fr));
+		gap: var(--spacing-3);
+	}
+
+	.stats > div {
+		padding: var(--spacing-4);
+		background: var(--color-surface);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-card);
+	}
+
+	.stats dt {
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.stats dd {
+		margin: 0;
+		font-family: var(--font-mono);
+		font-size: var(--font-size-3xl);
+		font-weight: 500;
+		line-height: 1.1;
+	}
+
+	.stats small {
+		margin-left: 2px;
+		font-family: var(--font-body);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+	}
+
+	.section-head__sub {
+		margin-top: var(--spacing-1);
+		font-size: var(--font-size-sm);
+		color: var(--color-text-secondary);
+	}
+
+	.eras {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: var(--spacing-4);
+	}
+
+	.era {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-3);
+		padding: var(--card-padding);
+		background: var(--color-surface);
+		border-radius: var(--radius-xl);
+		box-shadow: var(--shadow-card);
+	}
+
+	.era__link {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		grid-template-rows: auto auto;
+		gap: var(--spacing-1) var(--spacing-3);
+		padding: var(--spacing-4);
+		border-radius: var(--radius-lg);
+		background: var(--era-bg);
+		color: var(--era-ink);
+		text-decoration: none;
+	}
+
+	.era__range {
+		font-family: var(--font-mono);
+		font-size: var(--font-size-xs);
+		opacity: 0.8;
+	}
+
+	.era__name {
+		grid-row: 2;
+		font-size: var(--font-size-xl);
+		font-weight: 600;
+	}
+
+	.era__count {
+		grid-row: 1 / 3;
+		grid-column: 2;
+		align-self: center;
+		font-family: var(--font-mono);
+		font-size: var(--font-size-sm);
+	}
+
+	.era__lead {
+		font-size: var(--font-size-sm);
+		line-height: 1.7;
+		color: var(--color-text-secondary);
+	}
+
+	.era__picks {
+		margin-top: auto;
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+
+	.era__picks a {
+		color: var(--color-text);
+	}
+
+	.features {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+		gap: var(--spacing-4);
+	}
+
+	.feature {
+		display: flex;
+		flex-direction: column;
+		gap: var(--spacing-2);
+		height: 100%;
+		padding: var(--spacing-6);
+		background: var(--color-surface);
+		border-radius: var(--radius-xl);
+		box-shadow: var(--shadow-card);
+		color: inherit;
+		text-decoration: none;
+		transition: box-shadow 0.2s ease;
+	}
+
+	.feature:hover {
+		box-shadow: var(--shadow-card-hover);
+	}
+
+	.feature__title {
+		font-size: var(--font-size-lg);
+		font-weight: 600;
+		line-height: 1.45;
+	}
+
+	.feature__excerpt {
+		font-size: var(--font-size-sm);
+		line-height: 1.7;
+		color: var(--color-text-secondary);
+	}
+
+	.genre-cloud {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--spacing-2);
+	}
+
+	.count {
+		margin-left: 2px;
+		font-family: var(--font-mono);
+		color: var(--color-muted);
+	}
+
+	@media (max-width: 760px) {
+		.hero {
+			grid-template-columns: minmax(0, 1fr);
+		}
+	}
+</style>

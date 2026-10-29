@@ -1,0 +1,174 @@
+---
+import Base from "../../../layouts/Base.astro";
+import CatalogTable from "../../../components/CatalogTable.astro";
+import type { CatalogRow } from "../../../lib/catalog";
+import { loadCatalogIndex, loadCatalogYear, normalizeForSearch } from "../../../lib/catalog";
+import { gradeInfo } from "../../../lib/amazon";
+import { kitsUrl } from "../../../lib/kits";
+
+const { platform } = Astro.params;
+const index = await loadCatalogIndex(Astro.url.origin);
+const pf = index?.grades.find((p) => p.slug === platform);
+if (!pf) return Astro.rewrite("/404");
+
+const fmt = new Intl.NumberFormat("ja-JP");
+const info = gradeInfo(pf.slug);
+const q = (Astro.url.searchParams.get("q") ?? "").trim().slice(0, 60);
+
+// 検索語があれば全年を読んで絞り込む
+let results: CatalogRow[] = [];
+if (q) {
+	const needle = normalizeForSearch(q);
+	const all = await Promise.all(pf.years.map(([y]) => loadCatalogYear(pf.slug, y, Astro.url.origin)));
+	results = all
+		.flatMap((rows) => rows ?? [])
+		.filter(([, title, publisher]) => normalizeForSearch(`${title}${publisher}`).includes(needle))
+		.slice(0, 300);
+}
+// 解説付きの厳選作品(全年から)
+const curated = q ? [] : (await Promise.all(pf.years.map(([y]) => loadCatalogYear(pf.slug, y, Astro.url.origin)))).flatMap((rows) => (rows ?? []).filter((r) => r[4]));
+const maxYear = Math.max(...pf.years.map(([, n]) => n));
+Astro.response.headers.set("Cache-Control", "public, max-age=3600");
+---
+
+<Base title={`${pf.label}の全マシン一覧`} description={`${pf.label}のタミヤRCカー${fmt.format(pf.count)}車種を、初出の年ごとにまとめた一覧。復刻版・限定品も含みます。`}>
+	<header class="band intro">
+		<div class="frame">
+			<p class="eyebrow"><a href="/catalog">全車種名簿</a> / {pf.label}</p>
+			<h1 class="intro__title">{pf.label}の全マシン一覧</h1>
+			<p class="intro__lead">
+				{fmt.format(pf.count)}車種(うち限定品{fmt.format(pf.dl)}車種)を、初出の年ごとに並べています。{info?.desc}
+			</p>
+			<form class="search" action={`/catalog/${pf.slug}`} method="get" role="search">
+				<label for="catalog-q" class="sr-only">{pf.label}のマシンを検索</label>
+				<input id="catalog-q" name="q" type="search" value={q} placeholder="車種名・シャーシで探す" />
+				<button type="submit" class="btn btn--sm">検索</button>
+			</form>
+		</div>
+	</header>
+
+	{
+		q ? (
+			<section class="band section" aria-labelledby="results-h">
+				<div class="frame">
+					<h2 id="results-h" class="sub">
+						「{q}」の検索結果 {results.length >= 300 ? "300件以上(先頭300件)" : `${results.length}件`}
+					</h2>
+					{results.length > 0 ? <CatalogTable rows={results} showYear /> : <p class="empty">見つかりませんでした。表記を変えて試してください。</p>}
+					<p class="back"><a href={`/catalog/${pf.slug}`}>← 年別の一覧に戻る</a></p>
+				</div>
+			</section>
+		) : (
+			<>
+				<section class="band section" aria-labelledby="years-h">
+					<div class="frame">
+						<h2 id="years-h" class="sub">発売年から探す</h2>
+						<ul class="years">
+							{pf.years.map(([year, count]) => (
+								<li>
+									<a href={`/catalog/${pf.slug}/${year}`} class="year">
+										<span class="year__label">{year === 0 ? "年不明" : `${year}年`}</span>
+										<span class="year__bar" style={`--w:${Math.max(4, Math.round((count / maxYear) * 100))}%`} aria-hidden="true" />
+										<span class="year__count">{fmt.format(count)}車種</span>
+									</a>
+								</li>
+							))}
+						</ul>
+					</div>
+				</section>
+				{curated.length > 0 && (
+					<section class="band section" aria-labelledby="curated-h">
+						<div class="frame">
+							<h2 id="curated-h" class="sub">このサイトの厳選マシン({curated.length}台)</h2>
+							<p class="note">解説付きで紹介しているマシンです。
+								<a href={kitsUrl({ grade: pf.slug })}>カテゴリで絞り込んだ厳選一覧</a>もあります。
+							</p>
+							<CatalogTable rows={curated} showYear />
+						</div>
+					</section>
+				)}
+			</>
+		)
+	}
+</Base>
+
+<style>
+	.eyebrow a {
+		color: inherit;
+	}
+
+	.search {
+		display: flex;
+		gap: var(--spacing-2);
+		max-width: 480px;
+		margin-top: var(--spacing-5);
+	}
+
+	.search input {
+		flex: 1;
+		min-width: 0;
+		padding: var(--spacing-2) var(--spacing-4);
+		border: 0;
+		border-radius: var(--radius-full);
+		background: var(--color-surface);
+		box-shadow: inset 0 0 0 1px var(--color-border-strong);
+		font: inherit;
+		color: var(--color-text);
+	}
+
+	.sub {
+		margin-bottom: var(--spacing-4);
+		font-size: var(--font-size-xl);
+	}
+
+	.note,
+	.empty,
+	.back {
+		margin-bottom: var(--spacing-4);
+		font-size: var(--font-size-sm);
+		color: var(--color-muted);
+	}
+
+	.back {
+		margin-top: var(--spacing-5);
+	}
+
+	.years {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+		gap: var(--spacing-2) var(--spacing-5);
+	}
+
+	.year {
+		display: grid;
+		grid-template-columns: 4.5rem 1fr 4.5rem;
+		align-items: center;
+		gap: var(--spacing-3);
+		padding: var(--spacing-2) var(--spacing-3);
+		border-radius: var(--radius-md);
+		color: var(--color-text);
+		text-decoration: none;
+	}
+
+	.year:hover {
+		background: var(--color-surface);
+	}
+
+	.year__label {
+		font-family: var(--font-mono);
+		font-weight: 500;
+	}
+
+	.year__bar {
+		height: 6px;
+		border-radius: 3px;
+		background: linear-gradient(to right, var(--color-brand) var(--w), var(--color-fill) var(--w));
+	}
+
+	.year__count {
+		font-size: var(--font-size-sm);
+		text-align: right;
+		color: var(--color-muted);
+	}
+</style>
