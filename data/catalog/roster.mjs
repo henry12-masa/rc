@@ -13,7 +13,7 @@ const read = (name, fallback = []) => {
 };
 
 /** 名簿に載せない商品(ボディだけ・パーツ・トレーラーなど) */
-const NOT_A_CAR = /ボディ(パーツ)?セット|スペアボディ|ボディ\s*\(|セミトレーラー|トレーラー用|パーツセット|オプション|ホイール|タイヤ|ダンパー|モーター(?!.*RC)|ギヤ|ギア|ステッカー|ドライバー人形|アップグレード|コンバージョン|ハイキャパシティ|メカレス(?!セット)/;
+const NOT_A_CAR = /ボディ(パーツ)?セット|スペアボディ|ボディ\s*\(|セミトレーラー|トレーラー用|パーツセット|オプション|ホイール|タイヤ|ダンパー|モーター(?!.*RC)|ギヤ|ギア|ステッカー|ドライバー人形|アップグレード|コンバージョン|ハイキャパシティ|メカレス(?!セット)|^GE\.\d|プラグレンチ|燃料ポンプ|スターターボックス|スプリングセット|ウイングセット|フューエルタンク\s*トレーラー/;
 
 /** 品番から限定品を見分ける(84xxx・47xxx・49xxx は限定・特別企画) */
 const isLimited = (item) => /^(84|47|49)\d{3}$/.test(item ?? "");
@@ -41,7 +41,7 @@ function fromMonthly() {
 	const rows = [];
 	for (const [ym, list] of Object.entries(monthly)) {
 		for (const [item, rawName, genre] of list) {
-			const name = rawName.replace(/\s*発売日[:：].*$/, "").replace(/&#215;/g, "×").replace(/&amp;/g, "&").trim();
+			const name = rawName.replace(/\s*発売日[:：].*$/, "").replace(/&#215;/g, "×").replace(/&amp;/g, "&").replace(/&#39;/g, "'").trim();
 			if (NOT_A_CAR.test(name) && !/シャーシキット/.test(name)) continue;
 			// XB(組み立て済み完成品)とフルセットは、同じ車種のキットが載るので外す
 			if (/^XB\s|フルセット/.test(name.replace(/^1\/\d+\s*RC\s*/, "")) && !/フルオペレーション/.test(name)) continue;

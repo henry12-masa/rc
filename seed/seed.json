@@ -557,7 +557,7 @@
 					"title": "ポルシェ934 RSRターボレーシング",
 					"model_number": "",
 					"release_year": 1976,
-					"released": "1976",
+					"released": "1976-12",
 					"scale": "1/12",
 					"tier": "essential",
 					"summary": "タミヤの電動RCカーの第1号。すべてはここから始まった。",
@@ -691,148 +691,6 @@
 				}
 			},
 			{
-				"id": "kit-xr311",
-				"slug": "xr311",
-				"status": "published",
-				"data": {
-					"title": "XR311コンバットバギー",
-					"model_number": "58004",
-					"release_year": 1977,
-					"released": "1977",
-					"scale": "1/12",
-					"tier": "recommended",
-					"summary": "タミヤ初のオフロードRCカー。舗装路の外へ出た最初の1台。",
-					"curator_note": "ダブルウィッシュボーンの4輪独立懸架。1977年としては画期的だった。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "xr311-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "xr311-s8",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "xr311-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "xr311-s9",
-									"text": "アメリカ軍の次期高機動車として開発された「XR311」をモデルにした、タミヤ初のオフロードRCカー。スケールは当時の主流だった1/12で、1977年に発売された。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "xr311-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "xr311-sa",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "xr311-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "xr311-sb",
-									"text": "ジュラルミン板をプレスしたラダーフレームに、ダブルウィッシュボーンの4輪独立懸架を組み合わせている。ダンパーはなく、樹脂製のロッドをねじって支えるトーションバー方式だった。電源は単2乾電池4本で、オフロードを走るには力が足りなかった。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "xr311-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "xr311-sc",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "xr311-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "xr311-sd",
-									"text": "のちにバギーチャンプに主役の座を譲り、1982年にラインナップから外れた。2012年には復刻版が出て、壊れやすかったトーションバーはスチール製の板に変えられている。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "xr311-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "xr311-se",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "xr311-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "xr311-sf",
-									"text": "オフロードRCの始まりを手元に置きたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ XR311 RC"
-				},
-				"taxonomies": {
-					"era": [
-						"dawn"
-					],
-					"grade": [
-						"buggy",
-						"crawler"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
 				"id": "kit-tyrrell-p34",
 				"slug": "tyrrell-p34",
 				"status": "published",
@@ -840,7 +698,7 @@
 					"title": "タイレルP34シックスホイーラー",
 					"model_number": "58003",
 					"release_year": 1977,
-					"released": "1977",
+					"released": "1977-11",
 					"scale": "",
 					"tier": "deep",
 					"summary": "F1史上初の6輪車を、そのままRCにした。タミヤRCの3台目。",
@@ -854,7 +712,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "tyrrell-p34-sg",
+									"_key": "tyrrell-p34-s8",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -868,7 +726,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "tyrrell-p34-sh",
+									"_key": "tyrrell-p34-s9",
 									"text": "前に小さなタイヤを4つ並べた6輪のF1マシン、タイレルP34をモデルにしたRCカー。1977年に発売された、タミヤのRCカーの3台目にあたる。",
 									"marks": []
 								}
@@ -882,7 +740,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "tyrrell-p34-si",
+									"_key": "tyrrell-p34-sa",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -896,7 +754,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "tyrrell-p34-sj",
+									"_key": "tyrrell-p34-sb",
 									"text": "2本の前車軸がどちらも舵を切る、ほかにない構造を持つ。実車の珍しさをそのまま走らせられることが、このマシンのいちばんの魅力だ。",
 									"marks": []
 								}
@@ -910,7 +768,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "tyrrell-p34-sk",
+									"_key": "tyrrell-p34-sc",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -924,7 +782,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "tyrrell-p34-sl",
+									"_key": "tyrrell-p34-sd",
 									"text": "初期のタミヤRCは、ポルシェ934、935、そしてこのP34と、実在のレースカーを次々にRCにしていった。のちにF103シャーシをもとにした復刻版も出ている。",
 									"marks": []
 								}
@@ -938,7 +796,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "tyrrell-p34-sm",
+									"_key": "tyrrell-p34-se",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -952,7 +810,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "tyrrell-p34-sn",
+									"_key": "tyrrell-p34-sf",
 									"text": "変わった形のレースカーが好きな人、初期のタミヤRCを集めたい人に。",
 									"marks": []
 								}
@@ -974,28 +832,28 @@
 				}
 			},
 			{
-				"id": "kit-vw-off-roader",
-				"slug": "vw-off-roader",
+				"id": "kit-xr311",
+				"slug": "xr311",
 				"status": "published",
 				"data": {
-					"title": "ワーゲンオフローダー",
-					"model_number": "58016",
-					"release_year": 1979,
-					"released": "1979",
-					"scale": "1/10",
+					"title": "XR311コンバットバギー",
+					"model_number": "58004",
+					"release_year": 1977,
+					"released": "1977-12",
+					"scale": "1/12",
 					"tier": "recommended",
-					"summary": "バハ・バグ仕様のビートル。シャーシはバギーチャンプと同じ。",
-					"curator_note": "海外での名前は「サンドスコーチャー」。",
+					"summary": "タミヤ初のオフロードRCカー。舗装路の外へ出た最初の1台。",
+					"curator_note": "ダブルウィッシュボーンの4輪独立懸架。1977年としては画期的だった。",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "vw-off-roader-b0",
+							"_key": "xr311-b0",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "vw-off-roader-so",
+									"_key": "xr311-sg",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -1003,27 +861,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "vw-off-roader-b1",
+							"_key": "xr311-b1",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "vw-off-roader-sp",
-									"text": "バハ・レースの市販車クラスに出たフォルクスワーゲン・ビートルの「バハ・バグ」をモデルにした、1/10の電動RCカー。1979年に発表された。日本の外では「サンドスコーチャー」と呼ばれる。",
+									"_key": "xr311-sh",
+									"text": "アメリカ軍の次期高機動車として開発された「XR311」をモデルにした、タミヤ初のオフロードRCカー。スケールは当時の主流だった1/12で、1977年に発売された。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "vw-off-roader-b2",
+							"_key": "xr311-b2",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "vw-off-roader-sq",
+									"_key": "xr311-si",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -1031,27 +889,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "vw-off-roader-b3",
+							"_key": "xr311-b3",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "vw-off-roader-sr",
-									"text": "シャーシはバギーチャンプと共通で、違うのはタイヤとホイール、ボディだけ。防水のメカボックスや、デフのない駆動もそのままだ。",
+									"_key": "xr311-sj",
+									"text": "ジュラルミン板をコの字に曲げたチャンネル型フレームに、ダブルウィッシュボーンの4輪独立懸架を組み合わせ、モーターを後端に縦置きして後輪を駆動する。ダンパーはなく、トーションバー(ねじり棒ばね)で車体を支える方式だった。電源は単2乾電池4本で、オフロードを走るには力が足りなかった。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "vw-off-roader-b4",
+							"_key": "xr311-b4",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "vw-off-roader-ss",
+									"_key": "xr311-sk",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -1059,27 +917,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "vw-off-roader-b5",
+							"_key": "xr311-b5",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "vw-off-roader-st",
-									"text": "2010年2月に復刻版が発売された。バギーチャンプの復刻版で加えられた改良も受け継いでいる。",
+									"_key": "xr311-sl",
+									"text": "のちにバギーチャンプに主役の座を譲り、1982年にラインナップから外れた。2012年には復刻版が出て、壊れやすかったトーションバーはスチール製の板に変えられている。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "vw-off-roader-b6",
+							"_key": "xr311-b6",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "vw-off-roader-su",
+									"_key": "xr311-sm",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -1087,27 +945,28 @@
 						},
 						{
 							"_type": "block",
-							"_key": "vw-off-roader-b7",
+							"_key": "xr311-b7",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "vw-off-roader-sv",
-									"text": "ビートルが好きな人、バギーチャンプと並べたい人に。",
+									"_key": "xr311-sn",
+									"text": "オフロードRCの始まりを手元に置きたい人に。",
 									"marks": []
 								}
 							]
 						}
 					],
-					"amazon_query": "タミヤ ワーゲンオフローダー"
+					"amazon_query": "タミヤ XR311 RC"
 				},
 				"taxonomies": {
 					"era": [
-						"buggy"
+						"dawn"
 					],
 					"grade": [
-						"buggy"
+						"buggy",
+						"crawler"
 					],
 					"series": [
 						"vintage"
@@ -1136,7 +995,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "buggy-champ-sw",
+									"_key": "buggy-champ-so",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -1150,7 +1009,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "buggy-champ-sx",
+									"_key": "buggy-champ-sp",
 									"text": "メキシコのバハ・レースを走るバギーカーをモデルにした、1/10の電動RCバギー。1979年11月に発売された。日本の外では「ラフライダー」の名前で知られる。",
 									"marks": []
 								}
@@ -1164,7 +1023,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "buggy-champ-sy",
+									"_key": "buggy-champ-sq",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -1178,7 +1037,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "buggy-champ-sz",
+									"_key": "buggy-champ-sr",
 									"text": "FRPのシャーシに、アルミダイキャストで実車の構造をまねたサスペンションを組み合わせ、タミヤとして初めて4輪にオイルダンパーを付けた。サーボや受信機は2分割のメカボックスに収めて、防塵・防水にしている。そのぶん重く、全備重量は約2,100gあった。デフがなく、いつもデフロックの状態なので、後輪駆動なのに悪路に強い。",
 									"marks": []
 								}
@@ -1192,7 +1051,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "buggy-champ-s10",
+									"_key": "buggy-champ-ss",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -1206,7 +1065,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "buggy-champ-s11",
+									"_key": "buggy-champ-st",
 									"text": "重さを差し引いても、本格的なオフロードレースができるモデルとして国内外でヒットした。ワーゲンオフローダーやフォード・レンジャー、ファイティングバギーはこのシャーシから生まれている。2009年7月には、当時の梱包まで再現した復刻版が出た。",
 									"marks": []
 								}
@@ -1220,7 +1079,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "buggy-champ-s12",
+									"_key": "buggy-champ-su",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -1234,7 +1093,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "buggy-champ-s13",
+									"_key": "buggy-champ-sv",
 									"text": "金属パーツの重みを感じながら組みたい人、RCバギーの原点を走らせたい人に。",
 									"marks": []
 								}
@@ -1242,6 +1101,147 @@
 						}
 					],
 					"amazon_query": "タミヤ バギーチャンプ"
+				},
+				"taxonomies": {
+					"era": [
+						"buggy"
+					],
+					"grade": [
+						"buggy"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
+				"id": "kit-vw-off-roader",
+				"slug": "vw-off-roader",
+				"status": "published",
+				"data": {
+					"title": "ワーゲンオフローダー",
+					"model_number": "58016",
+					"release_year": 1979,
+					"released": "1979-12",
+					"scale": "1/10",
+					"tier": "recommended",
+					"summary": "バハ・バグ仕様のビートル。シャーシはバギーチャンプと同じ。",
+					"curator_note": "海外での名前は「サンドスコーチャー」。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "vw-off-roader-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "vw-off-roader-sw",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "vw-off-roader-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "vw-off-roader-sx",
+									"text": "バハ・レースの市販車クラスに出たフォルクスワーゲン・ビートルの「バハ・バグ」をモデルにした、1/10の電動RCカー。1979年に発表された。日本の外では「サンドスコーチャー」と呼ばれる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "vw-off-roader-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "vw-off-roader-sy",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "vw-off-roader-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "vw-off-roader-sz",
+									"text": "シャーシはバギーチャンプと共通で、違うのはタイヤとホイール、ボディだけ。防水のメカボックスや、デフのない駆動もそのままだ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "vw-off-roader-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "vw-off-roader-s10",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "vw-off-roader-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "vw-off-roader-s11",
+									"text": "2010年2月に復刻版が発売された。バギーチャンプの復刻版で加えられた改良も受け継いでいる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "vw-off-roader-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "vw-off-roader-s12",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "vw-off-roader-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "vw-off-roader-s13",
+									"text": "ビートルが好きな人、バギーチャンプと並べたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ ワーゲンオフローダー"
 				},
 				"taxonomies": {
 					"era": [
@@ -1546,7 +1546,7 @@
 					"title": "ワイルドウイリス",
 					"model_number": "58035",
 					"release_year": 1982,
-					"released": "1982",
+					"released": "1982-11",
 					"scale": "1/10",
 					"tier": "essential",
 					"summary": "ジープをデフォルメした、ウイリー走行のコミカルなRCカー。",
@@ -2526,288 +2526,6 @@
 				}
 			},
 			{
-				"id": "kit-fox",
-				"slug": "fox",
-				"status": "published",
-				"data": {
-					"title": "フォックス",
-					"model_number": "58051",
-					"release_year": 1985,
-					"released": "1985",
-					"scale": "1/10",
-					"tier": "deep",
-					"summary": "ホットショットの部品から生まれた、競技志向の2WDバギー。",
-					"curator_note": "一代限りで消えたが、2013年に「ノバフォックス」として帰ってきた。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "fox-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "fox-s34",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "fox-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "fox-s35",
-									"text": "ホットショットの基本部品をもとに、当時新しかったCVAオイルダンパーを付けた1/10の電動RCバギー。1985年に発売された。マイティフロッグより競技向けを強めたモデルだ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "fox-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "fox-s36",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "fox-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "fox-s37",
-									"text": "前後ダブルウィッシュボーンの4輪独立懸架で、後輪を駆動する。ギア比は5種類に変えられた。ただ、密閉構造のシャーシは整備しにくく重く、他社の2WDバギーには及ばなかった。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "fox-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "fox-s38",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "fox-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "fox-s39",
-									"text": "派生車種を出すことなく、競技向けの座をファルコンやアスチュートに譲って一代で姿を消した。2013年に「ノバフォックス」の名前で、スポット生産ながら復刻されている。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "fox-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "fox-s3a",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "fox-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "fox-s3b",
-									"text": "80年代の2WDレーシングバギーをたどりたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ ノバフォックス"
-				},
-				"taxonomies": {
-					"era": [
-						"boom"
-					],
-					"grade": [
-						"buggy"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
-				"id": "kit-wild-one",
-				"slug": "wild-one",
-				"status": "published",
-				"data": {
-					"title": "ワイルドワン",
-					"model_number": "58050",
-					"release_year": 1985,
-					"released": "1985",
-					"scale": "1/10",
-					"tier": "recommended",
-					"summary": "パイプフレームのボディを持つ、RR方式の2WDバギー。",
-					"curator_note": "アタックバギーの部品から生まれた、競技向けのモデル。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "wild-one-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "wild-one-s3c",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "wild-one-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "wild-one-s3d",
-									"text": "アタックバギーの部品をもとに、競技を意識した改良を加えた1/10の電動RCバギー。1985年に発売された。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "wild-one-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "wild-one-s3e",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "wild-one-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "wild-one-s3f",
-									"text": "黒いシャーシに赤いロールケージ、ポリカーボネートのボディカウルを組み合わせる。サスペンションは前後ともトレーリングアームの独立懸架で、オイルダンパーを持つ。モーターを車体のいちばん後ろに置いて後輪を駆動する。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "wild-one-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "wild-one-s3g",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "wild-one-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "wild-one-s3h",
-									"text": "パイプフレーム構造のボディと、前後トレーリングアームのサスペンションを持つ最後のモデルになった。2012年には「ワイルドワンオフローダー」として復刻されている。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "wild-one-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "wild-one-s3i",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "wild-one-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "wild-one-s3j",
-									"text": "ロールケージのあるバギーが好きな人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ ワイルドワン"
-				},
-				"taxonomies": {
-					"era": [
-						"boom"
-					],
-					"grade": [
-						"buggy"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
 				"id": "kit-hotshot",
 				"slug": "hotshot",
 				"status": "published",
@@ -2829,7 +2547,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-s3k",
+									"_key": "hotshot-s34",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -2843,7 +2561,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-s3l",
+									"_key": "hotshot-s35",
 									"text": "タミヤが初めて発売したバギータイプの4WDの電動RCカー。1985年4月16日に発売され、キット価格は21,800円だった。",
 									"marks": []
 								}
@@ -2857,7 +2575,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-s3m",
+									"_key": "hotshot-s36",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -2871,7 +2589,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-s3n",
+									"_key": "hotshot-s37",
 									"text": "実車と同じようにプロペラシャフトで前後輪を駆動し、前後ともダブルウィッシュボーンの独立懸架を持つ。リアは1本のダンパーを押して動かす凝った構造だった。一方で重く、センターデフもないため、4WDの力が生きる場面以外では同じクラスの2WDより遅く、整備もしにくかった。",
 									"marks": []
 								}
@@ -2885,7 +2603,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-s3o",
+									"_key": "hotshot-s38",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -2899,7 +2617,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-s3p",
+									"_key": "hotshot-s39",
 									"text": "ホットショットの登場で、ブームは二輪駆動から四輪駆動へ移っていった。弱点を直したスーパーショット、ブーメラン、ホットショットIIなどの派生モデルが次々に生まれている。2007年夏からはホットショット(2007)として復刻されている。",
 									"marks": []
 								}
@@ -2913,7 +2631,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-s3q",
+									"_key": "hotshot-s3a",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -2927,7 +2645,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-s3r",
+									"_key": "hotshot-s3b",
 									"text": "80年代の4WDバギーの始まりを走らせたい人に。",
 									"marks": []
 								}
@@ -2970,7 +2688,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hilux-highlift-s3s",
+									"_key": "hilux-highlift-s3c",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -2984,7 +2702,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hilux-highlift-s3t",
+									"_key": "hilux-highlift-s3d",
 									"text": "1981年のトヨタ ハイラックス4WDの部品を受け継ぎ、大径のラグパターンタイヤを履かせた1/10の電動RCカー。1985年8月22日に発売された。",
 									"marks": []
 								}
@@ -2998,7 +2716,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hilux-highlift-s3u",
+									"_key": "hilux-highlift-s3e",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -3012,7 +2730,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hilux-highlift-s3v",
+									"_key": "hilux-highlift-s3f",
 									"text": "重くなった車体を動かすため、大きなRS-750SHモーターを積む。フレームはスチールのチャンネル材に変わり、3段変速のトランスミッションも受け継いだ。ボディは30系のハイラックスで、荷台の張り出しをなくしたタイプになっている。",
 									"marks": []
 								}
@@ -3026,7 +2744,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hilux-highlift-s3w",
+									"_key": "hilux-highlift-s3g",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -3040,7 +2758,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hilux-highlift-s3x",
+									"_key": "hilux-highlift-s3h",
 									"text": "1992年のマウンテンライダーのあと、本格的な実車派のオフロードモデルは一度途絶え、2006年のフォード F-350 ハイリフトまで間が空いた。",
 									"marks": []
 								}
@@ -3054,7 +2772,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hilux-highlift-s3y",
+									"_key": "hilux-highlift-s3i",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -3068,7 +2786,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hilux-highlift-s3z",
+									"_key": "hilux-highlift-s3j",
 									"text": "実車らしいメカをじっくり眺めたい人に。",
 									"marks": []
 								}
@@ -3091,6 +2809,288 @@
 				}
 			},
 			{
+				"id": "kit-wild-one",
+				"slug": "wild-one",
+				"status": "published",
+				"data": {
+					"title": "ワイルドワン",
+					"model_number": "58050",
+					"release_year": 1985,
+					"released": "1985-09",
+					"scale": "1/10",
+					"tier": "recommended",
+					"summary": "パイプフレームのボディを持つ、RR方式の2WDバギー。",
+					"curator_note": "アタックバギーの部品から生まれた、競技向けのモデル。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "wild-one-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "wild-one-s3k",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "wild-one-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "wild-one-s3l",
+									"text": "アタックバギーの部品をもとに、競技を意識した改良を加えた1/10の電動RCバギー。1985年に発売された。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "wild-one-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "wild-one-s3m",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "wild-one-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "wild-one-s3n",
+									"text": "黒いシャーシに赤いロールケージ、ポリカーボネートのボディカウルを組み合わせる。サスペンションは前後ともトレーリングアームの独立懸架で、オイルダンパーを持つ。モーターを車体のいちばん後ろに置いて後輪を駆動する。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "wild-one-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "wild-one-s3o",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "wild-one-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "wild-one-s3p",
+									"text": "パイプフレーム構造のボディと、前後トレーリングアームのサスペンションを持つ最後のモデルになった。2012年には「ワイルドワンオフローダー」として復刻されている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "wild-one-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "wild-one-s3q",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "wild-one-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "wild-one-s3r",
+									"text": "ロールケージのあるバギーが好きな人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ ワイルドワン"
+				},
+				"taxonomies": {
+					"era": [
+						"boom"
+					],
+					"grade": [
+						"buggy"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
+				"id": "kit-fox",
+				"slug": "fox",
+				"status": "published",
+				"data": {
+					"title": "フォックス",
+					"model_number": "58051",
+					"release_year": 1985,
+					"released": "1985-10",
+					"scale": "1/10",
+					"tier": "deep",
+					"summary": "ホットショットの部品から生まれた、競技志向の2WDバギー。",
+					"curator_note": "一代限りで消えたが、2013年に「ノバフォックス」として帰ってきた。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "fox-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "fox-s3s",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "fox-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "fox-s3t",
+									"text": "ホットショットの基本部品をもとに、当時新しかったCVAオイルダンパーを付けた1/10の電動RCバギー。1985年に発売された。マイティフロッグより競技向けを強めたモデルだ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "fox-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "fox-s3u",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "fox-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "fox-s3v",
+									"text": "前後ダブルウィッシュボーンの4輪独立懸架で、後輪を駆動する。ギア比は5種類に変えられた。ただ、密閉構造のシャーシは整備しにくく重く、他社の2WDバギーには及ばなかった。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "fox-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "fox-s3w",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "fox-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "fox-s3x",
+									"text": "派生車種を出すことなく、競技向けの座をファルコンやアスチュートに譲って一代で姿を消した。2013年に「ノバフォックス」の名前で、スポット生産ながら復刻されている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "fox-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "fox-s3y",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "fox-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "fox-s3z",
+									"text": "80年代の2WDレーシングバギーをたどりたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ ノバフォックス"
+				},
+				"taxonomies": {
+					"era": [
+						"boom"
+					],
+					"grade": [
+						"buggy"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
 				"id": "kit-super-shot",
 				"slug": "super-shot",
 				"status": "published",
@@ -3098,7 +3098,7 @@
 					"title": "スーパーショット",
 					"model_number": "58054",
 					"release_year": 1986,
-					"released": "1986",
+					"released": "1986-03",
 					"scale": "1/10",
 					"tier": "deep",
 					"summary": "ホットショットに当時のオプションを全部載せた上位モデル。",
@@ -3232,570 +3232,6 @@
 				}
 			},
 			{
-				"id": "kit-bigwig",
-				"slug": "bigwig",
-				"status": "published",
-				"data": {
-					"title": "ビッグウィッグ",
-					"model_number": "58057",
-					"release_year": 1986,
-					"released": "1986",
-					"scale": "1/10",
-					"tier": "deep",
-					"summary": "タミヤのRC発売10周年を記念して出た4WDバギー。",
-					"curator_note": "デザインはカーデザイナーとしても知られる由良拓也さん。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "bigwig-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "bigwig-s48",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "bigwig-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "bigwig-s49",
-									"text": "タミヤのラジコン発売10周年を記念して、1986年に発売された4WDバギー。デザインは、カーデザイナーとしても知られる由良拓也さんが手がけた。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "bigwig-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "bigwig-s4a",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "bigwig-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "bigwig-s4b",
-									"text": "ホットショットの系譜に連なる、シャフト駆動の4WDだ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "bigwig-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "bigwig-s4c",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "bigwig-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "bigwig-s4d",
-									"text": "ホットショットの性能面の不足を補うために生まれた派生モデルのひとつに数えられる。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "bigwig-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "bigwig-s4e",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "bigwig-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "bigwig-s4f",
-									"text": "80年代の4WDバギーを集めたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ ビッグウィッグ"
-				},
-				"taxonomies": {
-					"era": [
-						"boom"
-					],
-					"grade": [
-						"buggy"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
-				"id": "kit-blackfoot",
-				"slug": "blackfoot",
-				"status": "published",
-				"data": {
-					"title": "ブラックフット",
-					"model_number": "58058",
-					"release_year": 1986,
-					"released": "1986",
-					"scale": "1/10",
-					"tier": "recommended",
-					"summary": "マイティフロッグのシャーシに大径タイヤを履かせたビッグタイヤモデル。",
-					"curator_note": "モンスタービートル、キングブラックフットへと続く系譜の始まり。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "blackfoot-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "blackfoot-s4g",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "blackfoot-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "blackfoot-s4h",
-									"text": "マイティフロッグと同じ型のシャーシに、大きなタイヤを履かせた1/10の電動RCカー。1986年に発売された。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "blackfoot-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "blackfoot-s4i",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "blackfoot-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "blackfoot-s4j",
-									"text": "モンスタートラックのような姿で、後輪を駆動して悪路を走る。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "blackfoot-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "blackfoot-s4k",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "blackfoot-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "blackfoot-s4l",
-									"text": "同じシャーシからモンスタービートル、ブッシュデビル、スーパーブラックフット、キングブラックフットと、ブラックフット系のビッグタイヤモデルが続いた。2003年のブラックフット エクストリームからはワイルドダガー系のシャーシに変わっている。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "blackfoot-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "blackfoot-s4m",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "blackfoot-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "blackfoot-s4n",
-									"text": "大きなタイヤで庭や河原を走らせたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ ブラックフット"
-				},
-				"taxonomies": {
-					"era": [
-						"boom"
-					],
-					"grade": [
-						"monster"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
-				"id": "kit-porsche-959",
-				"slug": "porsche-959",
-				"status": "published",
-				"data": {
-					"title": "ポルシェ959 パリダカール・ラリー優勝車",
-					"model_number": "58059",
-					"release_year": 1986,
-					"released": "1986",
-					"scale": "1/12",
-					"tier": "deep",
-					"summary": "パリ・ダカール・ラリーを制したポルシェ959の1/12オフロードモデル。",
-					"curator_note": "このコンパクトなデフが、のちのアバンテを生んだ。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "porsche-959-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "porsche-959-s4o",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "porsche-959-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "porsche-959-s4p",
-									"text": "パリ・ダカール・ラリーで優勝したポルシェ959をモデルにした、1/12のオフロードRCカー。1986年に発売された。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "porsche-959-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "porsche-959-s4q",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "porsche-959-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "porsche-959-s4r",
-									"text": "小さなスケールに4WDの駆動系を収めたコンパクトなマシンだ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "porsche-959-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "porsche-959-s4s",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "porsche-959-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "porsche-959-s4t",
-									"text": "1988年のアバンテは、この959をもとに作られたため、前後のデフがとても小さくまとまり、スマートで美しい姿にできたとされる。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "porsche-959-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "porsche-959-s4u",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "porsche-959-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "porsche-959-s4v",
-									"text": "ラリーカーが好きな人、アバンテのルーツを知りたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ ポルシェ 959 RC"
-				},
-				"taxonomies": {
-					"era": [
-						"boom"
-					],
-					"grade": [
-						"rally"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
-				"id": "kit-monster-beetle",
-				"slug": "monster-beetle",
-				"status": "published",
-				"data": {
-					"title": "モンスタービートル",
-					"model_number": "58060",
-					"release_year": 1986,
-					"released": "1986",
-					"scale": "1/10",
-					"tier": "recommended",
-					"summary": "ビートルのボディに大径タイヤ。ブラックフットの兄弟。",
-					"curator_note": "ミニ四駆では「ワイルドミニ四駆」の第1弾として小さくなった。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "monster-beetle-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "monster-beetle-s4w",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "monster-beetle-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "monster-beetle-s4x",
-									"text": "フォルクスワーゲン・ビートルを思わせるボディに、大きなタイヤを組み合わせた1/10の電動RCカー。1986年に発売された。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "monster-beetle-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "monster-beetle-s4y",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "monster-beetle-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "monster-beetle-s4z",
-									"text": "シャーシはマイティフロッグと同じ型で、ブラックフットと共通する。悪路を力強く走るビッグタイヤモデルだ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "monster-beetle-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "monster-beetle-s50",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "monster-beetle-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "monster-beetle-s51",
-									"text": "ブラックフット系のビッグタイヤモデルのひとつとして、80年代のモンスタートラック人気を支えた。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "monster-beetle-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "monster-beetle-s52",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "monster-beetle-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "monster-beetle-s53",
-									"text": "ビートルが好きな人、大きなタイヤの迫力を楽しみたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ モンスタービートル"
-				},
-				"taxonomies": {
-					"era": [
-						"boom"
-					],
-					"grade": [
-						"monster"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
 				"id": "kit-boomerang",
 				"slug": "boomerang",
 				"status": "published",
@@ -3817,7 +3253,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "boomerang-s54",
+									"_key": "boomerang-s48",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -3831,7 +3267,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "boomerang-s55",
+									"_key": "boomerang-s49",
 									"text": "タミヤ初の4WDバギーであるホットショットと、上位のスーパーショットの弱点を根本から改良したモデル。1986年4月30日に15,800円で発売された。",
 									"marks": []
 								}
@@ -3845,7 +3281,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "boomerang-s56",
+									"_key": "boomerang-s4a",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -3859,7 +3295,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "boomerang-s57",
+									"_key": "boomerang-s4b",
 									"text": "操舵には「3分割タイロッド」方式を使い、バンプステアを大きく減らした。上半分を開けたバスタブ形のフレームにして整備しやすくし、樹脂パーツを多く使って軽く、低くした。それでもセンターデフがないため、アンダーステアは残った。",
 									"marks": []
 								}
@@ -3873,7 +3309,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "boomerang-s58",
+									"_key": "boomerang-s4c",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -3887,7 +3323,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "boomerang-s59",
+									"_key": "boomerang-s4d",
 									"text": "1987年に登場したサンダーショットに座を譲ったが、2008年12月に復刻版が発売されている。1987年10月には兄弟車のスーパーセイバーも出た。",
 									"marks": []
 								}
@@ -3901,7 +3337,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "boomerang-s5a",
+									"_key": "boomerang-s4e",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -3915,7 +3351,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "boomerang-s5b",
+									"_key": "boomerang-s4f",
 									"text": "ホットショット系の完成形を走らせたい人に。",
 									"marks": []
 								}
@@ -3958,7 +3394,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "falcon-s5c",
+									"_key": "falcon-s4g",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -3972,7 +3408,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "falcon-s5d",
+									"_key": "falcon-s4h",
 									"text": "1986年6月30日に発売された1/10の電動RCバギー。キット価格は11,000円だった。",
 									"marks": []
 								}
@@ -3986,7 +3422,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "falcon-s5e",
+									"_key": "falcon-s4i",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -4000,7 +3436,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "falcon-s5f",
+									"_key": "falcon-s4j",
 									"text": "低価格でありながら、4輪独立サスペンションにオイルダンパーを標準で備える。前輪には、タミヤの初心者向けモデルとして初めてダブルウィッシュボーンを使い、後輪はトレーリングアームで構造を簡単にしている。",
 									"marks": []
 								}
@@ -4014,7 +3450,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "falcon-s5g",
+									"_key": "falcon-s4k",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -4028,7 +3464,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "falcon-s5h",
+									"_key": "falcon-s4l",
 									"text": "ギアボックスやリアサスペンションの金型をベアホーク用に改修したため、当時の形での復刻はできないとされてきた。2008年2月にはデザインを新しくした「ネオファルコン」がDT-02シャーシで出ている。2026年12月には「ファルコン(2026)」の復刻が発表された。",
 									"marks": []
 								}
@@ -4042,7 +3478,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "falcon-s5i",
+									"_key": "falcon-s4m",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -4056,7 +3492,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "falcon-s5j",
+									"_key": "falcon-s4n",
 									"text": "手頃な値段で本格的な足回りを楽しみたい人に。",
 									"marks": []
 								}
@@ -4078,28 +3514,28 @@
 				}
 			},
 			{
-				"id": "kit-clod-buster",
-				"slug": "clod-buster",
+				"id": "kit-bigwig",
+				"slug": "bigwig",
 				"status": "published",
 				"data": {
-					"title": "クラッドバスター",
-					"model_number": "58065",
-					"release_year": 1987,
-					"released": "1987",
+					"title": "ビッグウィッグ",
+					"model_number": "58057",
+					"release_year": 1986,
+					"released": "1986-07",
 					"scale": "1/10",
-					"tier": "essential",
-					"summary": "ツインモーターの4WDに4輪操舵。モンスタートラックRCの決定版。",
-					"curator_note": "製造中止の時点で、タミヤで最も長く作られ続けたRCカーだった。",
+					"tier": "deep",
+					"summary": "タミヤのRC発売10周年を記念して出た4WDバギー。",
+					"curator_note": "デザインはカーデザイナーとしても知られる由良拓也さん。",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "clod-buster-b0",
+							"_key": "bigwig-b0",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "clod-buster-s5k",
+									"_key": "bigwig-s4o",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -4107,27 +3543,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "clod-buster-b1",
+							"_key": "bigwig-b1",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "clod-buster-s5l",
-									"text": "アメリカで流行していたモンスタートラックを再現した、1/10の電動RCカー。1987年に発売された。直径165mm、幅110mmの巨大なタイヤで4輪を駆動し、4輪で舵を切る。",
+									"_key": "bigwig-s4p",
+									"text": "タミヤのラジコン発売10周年を記念して、1986年に発売された4WDバギー。デザインは、カーデザイナーとしても知られる由良拓也さんが手がけた。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "clod-buster-b2",
+							"_key": "bigwig-b2",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "clod-buster-s5m",
+									"_key": "bigwig-s4q",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -4135,27 +3571,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "clod-buster-b3",
+							"_key": "bigwig-b3",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "clod-buster-s5n",
-									"text": "前後に1基ずつモーター一体型のアクスルを置き、プロペラシャフトを使わずに4WDにしている。ステアリングは前後逆の向きに切れる4輪操舵。スイッチで電池とモーターのつなぎ方を切り替えて、速いパワーモードと長く走れるエコノミーモードを選べた。",
+									"_key": "bigwig-s4r",
+									"text": "ホットショットの系譜に連なる、シャフト駆動の4WDだ。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "clod-buster-b4",
+							"_key": "bigwig-b4",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "clod-buster-s5o",
+									"_key": "bigwig-s4s",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -4163,27 +3599,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "clod-buster-b5",
+							"_key": "bigwig-b5",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "clod-buster-s5p",
-									"text": "静岡ホビーショーでの初公開は驚きをもって迎えられ、商業的にも成功した。派生のブルヘッド(1990年)、マイナーチェンジしたスーパークラッドバスター(2004年)と続き、海外でも改造のベース車として長く愛された。2026年9月にはクラッドバスター(2026)として復刻されている。",
+									"_key": "bigwig-s4t",
+									"text": "ホットショットの性能面の不足を補うために生まれた派生モデルのひとつに数えられる。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "clod-buster-b6",
+							"_key": "bigwig-b6",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "clod-buster-s5q",
+									"_key": "bigwig-s4u",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -4191,20 +3627,443 @@
 						},
 						{
 							"_type": "block",
-							"_key": "clod-buster-b7",
+							"_key": "bigwig-b7",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "clod-buster-s5r",
-									"text": "大きなRCで、とにかく迫力を楽しみたい人に。",
+									"_key": "bigwig-s4v",
+									"text": "80年代の4WDバギーを集めたい人に。",
 									"marks": []
 								}
 							]
 						}
 					],
-					"amazon_query": "タミヤ クラッドバスター"
+					"amazon_query": "タミヤ ビッグウィッグ"
+				},
+				"taxonomies": {
+					"era": [
+						"boom"
+					],
+					"grade": [
+						"buggy"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
+				"id": "kit-blackfoot",
+				"slug": "blackfoot",
+				"status": "published",
+				"data": {
+					"title": "ブラックフット",
+					"model_number": "58058",
+					"release_year": 1986,
+					"released": "1986-10",
+					"scale": "1/10",
+					"tier": "recommended",
+					"summary": "マイティフロッグのシャーシに大径タイヤを履かせたビッグタイヤモデル。",
+					"curator_note": "モンスタービートル、キングブラックフットへと続く系譜の始まり。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "blackfoot-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "blackfoot-s4w",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "blackfoot-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "blackfoot-s4x",
+									"text": "マイティフロッグと同じ型のシャーシに、大きなタイヤを履かせた1/10の電動RCカー。1986年に発売された。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "blackfoot-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "blackfoot-s4y",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "blackfoot-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "blackfoot-s4z",
+									"text": "モンスタートラックのような姿で、後輪を駆動して悪路を走る。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "blackfoot-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "blackfoot-s50",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "blackfoot-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "blackfoot-s51",
+									"text": "同じシャーシからモンスタービートル、ブッシュデビル、スーパーブラックフット、キングブラックフットと、ブラックフット系のビッグタイヤモデルが続いた。2003年のブラックフット エクストリームからはワイルドダガー系のシャーシに変わっている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "blackfoot-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "blackfoot-s52",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "blackfoot-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "blackfoot-s53",
+									"text": "大きなタイヤで庭や河原を走らせたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ ブラックフット"
+				},
+				"taxonomies": {
+					"era": [
+						"boom"
+					],
+					"grade": [
+						"monster"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
+				"id": "kit-porsche-959",
+				"slug": "porsche-959",
+				"status": "published",
+				"data": {
+					"title": "ポルシェ959 パリダカール・ラリー優勝車",
+					"model_number": "58059",
+					"release_year": 1986,
+					"released": "1986-10",
+					"scale": "1/12",
+					"tier": "deep",
+					"summary": "パリ・ダカール・ラリーを制したポルシェ959の1/12オフロードモデル。",
+					"curator_note": "このコンパクトなデフが、のちのアバンテを生んだ。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "porsche-959-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "porsche-959-s54",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "porsche-959-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "porsche-959-s55",
+									"text": "パリ・ダカール・ラリーで優勝したポルシェ959をモデルにした、1/12のオフロードRCカー。1986年に発売された。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "porsche-959-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "porsche-959-s56",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "porsche-959-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "porsche-959-s57",
+									"text": "小さなスケールに4WDの駆動系を収めたコンパクトなマシンだ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "porsche-959-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "porsche-959-s58",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "porsche-959-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "porsche-959-s59",
+									"text": "1988年のアバンテは、この959をもとに作られたため、前後のデフがとても小さくまとまり、スマートで美しい姿にできたとされる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "porsche-959-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "porsche-959-s5a",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "porsche-959-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "porsche-959-s5b",
+									"text": "ラリーカーが好きな人、アバンテのルーツを知りたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ ポルシェ 959 RC"
+				},
+				"taxonomies": {
+					"era": [
+						"boom"
+					],
+					"grade": [
+						"rally"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
+				"id": "kit-monster-beetle",
+				"slug": "monster-beetle",
+				"status": "published",
+				"data": {
+					"title": "モンスタービートル",
+					"model_number": "58060",
+					"release_year": 1986,
+					"released": "1986-12",
+					"scale": "1/10",
+					"tier": "recommended",
+					"summary": "ビートルのボディに大径タイヤ。ブラックフットの兄弟。",
+					"curator_note": "ミニ四駆では「ワイルドミニ四駆」の第1弾として小さくなった。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "monster-beetle-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "monster-beetle-s5c",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "monster-beetle-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "monster-beetle-s5d",
+									"text": "フォルクスワーゲン・ビートルを思わせるボディに、大きなタイヤを組み合わせた1/10の電動RCカー。1986年に発売された。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "monster-beetle-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "monster-beetle-s5e",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "monster-beetle-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "monster-beetle-s5f",
+									"text": "シャーシはマイティフロッグと同じ型で、ブラックフットと共通する。悪路を力強く走るビッグタイヤモデルだ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "monster-beetle-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "monster-beetle-s5g",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "monster-beetle-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "monster-beetle-s5h",
+									"text": "ブラックフット系のビッグタイヤモデルのひとつとして、80年代のモンスタートラック人気を支えた。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "monster-beetle-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "monster-beetle-s5i",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "monster-beetle-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "monster-beetle-s5j",
+									"text": "ビートルが好きな人、大きなタイヤの迫力を楽しみたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ モンスタービートル"
 				},
 				"taxonomies": {
 					"era": [
@@ -4226,7 +4085,7 @@
 					"title": "ホットショットII",
 					"model_number": "58062",
 					"release_year": 1987,
-					"released": "1987",
+					"released": "1987-05",
 					"scale": "1/10",
 					"tier": "deep",
 					"summary": "ホットショット系の最後の車種。黒いボディが目印。",
@@ -4240,7 +4099,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-ii-s5s",
+									"_key": "hotshot-ii-s5k",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -4254,7 +4113,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-ii-s5t",
+									"_key": "hotshot-ii-s5l",
 									"text": "ホットショット系の最後の車種として、1987年に登場した1/10の4WDバギー。キット価格は18,800円だった。",
 									"marks": []
 								}
@@ -4268,7 +4127,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-ii-s5u",
+									"_key": "hotshot-ii-s5m",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -4282,7 +4141,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-ii-s5v",
+									"_key": "hotshot-ii-s5n",
 									"text": "シャーシの構造は初代と同じだが、アルミのメンテナンスハッチを足して、クリスタルの交換くらいなら分解せずにできるようにした。ダンパーもブーメラン用に改良したものを使い、動きが滑らかになった。",
 									"marks": []
 								}
@@ -4296,7 +4155,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-ii-s5w",
+									"_key": "hotshot-ii-s5o",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -4310,7 +4169,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-ii-s5x",
+									"_key": "hotshot-ii-s5p",
 									"text": "軽く合理的なブーメランと比べると古さは隠せず、まもなく後継のサンダーショットが登場して、ホットショット系の歴史は終わった。2023年に「ホットショット2 BLOCKHEAD MOTORS」が出たあと、2024年にホットショットII(2024)の復刻が発表された。",
 									"marks": []
 								}
@@ -4324,7 +4183,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-ii-s5y",
+									"_key": "hotshot-ii-s5q",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -4338,7 +4197,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "hotshot-ii-s5z",
+									"_key": "hotshot-ii-s5r",
 									"text": "ホットショット系を最後までそろえたい人に。",
 									"marks": []
 								}
@@ -4360,148 +4219,6 @@
 				}
 			},
 			{
-				"id": "kit-midnight-pumpkin",
-				"slug": "midnight-pumpkin",
-				"status": "published",
-				"data": {
-					"title": "ミッドナイトパンプキン",
-					"model_number": "58070",
-					"release_year": 1987,
-					"released": "1987",
-					"scale": "1/12",
-					"tier": "recommended",
-					"summary": "50年代のアメリカン・ピックアップを思わせる、コミカルなビッグタイヤ車。",
-					"curator_note": "何度も再販され、今も買える息の長い人気モデル。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "midnight-pumpkin-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "midnight-pumpkin-s60",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "midnight-pumpkin-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "midnight-pumpkin-s61",
-									"text": "1950年代のアメリカン・ピックアップトラックを思わせるボディを載せた、1/10の電動RCカー。1987年に発売された。同じ年のランチボックスとはシャーシが共通の兄弟車だ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "midnight-pumpkin-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "midnight-pumpkin-s62",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "midnight-pumpkin-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "midnight-pumpkin-s63",
-									"text": "直径115mmのやわらかい中空タイヤに、後輪駆動の組み合わせ。前はスイングアクスル、後ろはローリングリジッドのサスペンションを持つ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "midnight-pumpkin-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "midnight-pumpkin-s64",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "midnight-pumpkin-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "midnight-pumpkin-s65",
-									"text": "2006年にはメッキボディのメタリックスペシャルが出るなど、再販を何度も繰り返してきた。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "midnight-pumpkin-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "midnight-pumpkin-s66",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "midnight-pumpkin-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "midnight-pumpkin-s67",
-									"text": "走らせて楽しい、見て楽しい1台がほしい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ ミッドナイトパンプキン"
-				},
-				"taxonomies": {
-					"era": [
-						"boom"
-					],
-					"grade": [
-						"monster",
-						"wheelie"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
 				"id": "kit-lunchbox",
 				"slug": "lunchbox",
 				"status": "published",
@@ -4509,7 +4226,7 @@
 					"title": "ランチボックス",
 					"model_number": "58063",
 					"release_year": 1987,
-					"released": "1987",
+					"released": "1987-06",
 					"scale": "1/12",
 					"tier": "essential",
 					"summary": "ダッジのバンをモデルにした、ウイリーするビッグタイヤ車。",
@@ -4523,7 +4240,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "lunchbox-s68",
+									"_key": "lunchbox-s5s",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -4537,7 +4254,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "lunchbox-s69",
+									"_key": "lunchbox-s5t",
 									"text": "ダッジのバンをモデルにしたボディを載せた、1/10の電動RCカー。1987年に発売された。",
 									"marks": []
 								}
@@ -4551,7 +4268,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "lunchbox-s6a",
+									"_key": "lunchbox-s5u",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -4565,7 +4282,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "lunchbox-s6b",
+									"_key": "lunchbox-s5v",
 									"text": "ミッドナイトパンプキンとシャーシが共通の兄弟車で、大きなタイヤで後輪を駆動する。",
 									"marks": []
 								}
@@ -4579,7 +4296,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "lunchbox-s6c",
+									"_key": "lunchbox-s5w",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -4593,7 +4310,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "lunchbox-s6d",
+									"_key": "lunchbox-s5x",
 									"text": "80年代のモンスタートラック人気を背景に生まれ、2005年には再発売されている。",
 									"marks": []
 								}
@@ -4607,7 +4324,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "lunchbox-s6e",
+									"_key": "lunchbox-s5y",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -4621,7 +4338,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "lunchbox-s6f",
+									"_key": "lunchbox-s5z",
 									"text": "コミカルな走りを気軽に楽しみたい人に。",
 									"marks": []
 								}
@@ -4637,6 +4354,147 @@
 					"grade": [
 						"monster",
 						"wheelie"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
+				"id": "kit-clod-buster",
+				"slug": "clod-buster",
+				"status": "published",
+				"data": {
+					"title": "クラッドバスター",
+					"model_number": "58065",
+					"release_year": 1987,
+					"released": "1987-09",
+					"scale": "1/10",
+					"tier": "essential",
+					"summary": "ツインモーターの4WDに4輪操舵。モンスタートラックRCの決定版。",
+					"curator_note": "製造中止の時点で、タミヤで最も長く作られ続けたRCカーだった。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "clod-buster-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "clod-buster-s60",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "clod-buster-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "clod-buster-s61",
+									"text": "アメリカで流行していたモンスタートラックを再現した、1/10の電動RCカー。1987年に発売された。直径165mm、幅110mmの巨大なタイヤで4輪を駆動し、4輪で舵を切る。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "clod-buster-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "clod-buster-s62",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "clod-buster-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "clod-buster-s63",
+									"text": "前後に1基ずつモーター一体型のアクスルを置き、プロペラシャフトを使わずに4WDにしている。ステアリングは前後逆の向きに切れる4輪操舵。スイッチで電池とモーターのつなぎ方を切り替えて、速いパワーモードと長く走れるエコノミーモードを選べた。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "clod-buster-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "clod-buster-s64",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "clod-buster-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "clod-buster-s65",
+									"text": "静岡ホビーショーでの初公開は驚きをもって迎えられ、商業的にも成功した。派生のブルヘッド(1990年)、マイナーチェンジしたスーパークラッドバスター(2004年)と続き、海外でも改造のベース車として長く愛された。2026年9月にはクラッドバスター(2026)として復刻されている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "clod-buster-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "clod-buster-s66",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "clod-buster-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "clod-buster-s67",
+									"text": "大きなRCで、とにかく迫力を楽しみたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ クラッドバスター"
+				},
+				"taxonomies": {
+					"era": [
+						"boom"
+					],
+					"grade": [
+						"monster"
 					],
 					"series": [
 						"vintage"
@@ -4665,7 +4523,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-shot-s6g",
+									"_key": "thunder-shot-s68",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -4679,7 +4537,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-shot-s6h",
+									"_key": "thunder-shot-s69",
 									"text": "ホットショット系を改良した、四輪駆動のオフロードバギー。1987年11月19日に発売され、キット価格は13,800円だった。",
 									"marks": []
 								}
@@ -4693,7 +4551,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-shot-s6i",
+									"_key": "thunder-shot-s6a",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -4707,7 +4565,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-shot-s6j",
+									"_key": "thunder-shot-s6b",
 									"text": "直前のスーパーセイバーより2,000円安く、2WDバギーと変わらない値段だった。プロペラシャフトの配置を見直してギアを1個減らし、駆動の効率を上げた。ステアリングは3分割タイロッド式で、旋回性能も良くなっている。",
 									"marks": []
 								}
@@ -4721,7 +4579,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-shot-s6k",
+									"_key": "thunder-shot-s6c",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -4735,7 +4593,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-shot-s6l",
+									"_key": "thunder-shot-s6d",
 									"text": "ボディの取り付け寸法がホーネットと同じで、「ドラゴン三兄弟」のボディも載せられた。このシャーシから、サンダードラゴン、スコーチャー、ファイヤードラゴンが生まれている。2005年12月にはスポットで再生産された。",
 									"marks": []
 								}
@@ -4749,7 +4607,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-shot-s6m",
+									"_key": "thunder-shot-s6e",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -4763,7 +4621,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-shot-s6n",
+									"_key": "thunder-shot-s6f",
 									"text": "手頃な4WDバギーを探している人、ドラゴンのボディを載せたい人に。",
 									"marks": []
 								}
@@ -4785,28 +4643,28 @@
 				}
 			},
 			{
-				"id": "kit-scorcher",
-				"slug": "scorcher",
+				"id": "kit-midnight-pumpkin",
+				"slug": "midnight-pumpkin",
 				"status": "published",
 				"data": {
-					"title": "スコーチャー",
-					"model_number": "58075",
-					"release_year": 1988,
-					"released": "1988",
-					"scale": "1/10",
-					"tier": "deep",
-					"summary": "サンダーショットにオプションを標準装備した、上級の4WD。",
-					"curator_note": "フロントのダンパーが、ようやく2本になった。",
+					"title": "ミッドナイトパンプキン",
+					"model_number": "58070",
+					"release_year": 1987,
+					"released": "1987-12",
+					"scale": "1/12",
+					"tier": "recommended",
+					"summary": "50年代のアメリカン・ピックアップを思わせる、コミカルなビッグタイヤ車。",
+					"curator_note": "何度も再販され、今も買える息の長い人気モデル。",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "scorcher-b0",
+							"_key": "midnight-pumpkin-b0",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "scorcher-s6o",
+									"_key": "midnight-pumpkin-s6g",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -4814,27 +4672,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "scorcher-b1",
+							"_key": "midnight-pumpkin-b1",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "scorcher-s6p",
-									"text": "サンダーショット系の4WDバギーに、オプションを加えて標準装備にした1/10の電動RCカー。1988年のクリスマス商戦に、バンキッシュとともに発売された。キット価格は22,000円だった。",
+									"_key": "midnight-pumpkin-s6h",
+									"text": "1950年代のアメリカン・ピックアップトラックを思わせるボディを載せた、1/10の電動RCカー。1987年に発売された。同じ年のランチボックスとはシャーシが共通の兄弟車だ。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "scorcher-b2",
+							"_key": "midnight-pumpkin-b2",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "scorcher-s6q",
+									"_key": "midnight-pumpkin-s6i",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -4842,27 +4700,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "scorcher-b3",
+							"_key": "midnight-pumpkin-b3",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "scorcher-s6r",
-									"text": "フロントのダンパーを2本にし、前後にアンチロールバーを付けた。キャンバー角を調整できるアッパーアーム、ボールベアリング、ユニバーサルスイングシャフトも標準装備だ。",
+									"_key": "midnight-pumpkin-s6j",
+									"text": "直径115mmのやわらかい中空タイヤに、後輪駆動の組み合わせ。前はスイングアクスル、後ろはローリングリジッドのサスペンションを持つ。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "scorcher-b4",
+							"_key": "midnight-pumpkin-b4",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "scorcher-s6s",
+									"_key": "midnight-pumpkin-s6k",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -4870,27 +4728,27 @@
 						},
 						{
 							"_type": "block",
-							"_key": "scorcher-b5",
+							"_key": "midnight-pumpkin-b5",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "scorcher-s6t",
-									"text": "ドラゴン三兄弟のボディも載せられた。2020年にはバンキッシュと同じ年に復刻されている。",
+									"_key": "midnight-pumpkin-s6l",
+									"text": "2006年にはメッキボディのメタリックスペシャルが出るなど、再販を何度も繰り返してきた。",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "scorcher-b6",
+							"_key": "midnight-pumpkin-b6",
 							"style": "h3",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "scorcher-s6u",
+									"_key": "midnight-pumpkin-s6m",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -4898,27 +4756,28 @@
 						},
 						{
 							"_type": "block",
-							"_key": "scorcher-b7",
+							"_key": "midnight-pumpkin-b7",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "scorcher-s6v",
-									"text": "サンダーショット系の完成形を走らせたい人に。",
+									"_key": "midnight-pumpkin-s6n",
+									"text": "走らせて楽しい、見て楽しい1台がほしい人に。",
 									"marks": []
 								}
 							]
 						}
 					],
-					"amazon_query": "タミヤ スコーチャー"
+					"amazon_query": "タミヤ ミッドナイトパンプキン"
 				},
 				"taxonomies": {
 					"era": [
 						"boom"
 					],
 					"grade": [
-						"buggy"
+						"monster",
+						"wheelie"
 					],
 					"series": [
 						"vintage"
@@ -4947,7 +4806,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "avante-s6w",
+									"_key": "avante-s6o",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -4961,7 +4820,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "avante-s6x",
+									"_key": "avante-s6p",
 									"text": "1988年3月31日に発売された電動ラジコンバギー。キット価格は34,800円で、タミヤの電動ラジコンバギーとして初めて「レース専用」をうたった製品だ。",
 									"marks": []
 								}
@@ -4975,7 +4834,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "avante-s6y",
+									"_key": "avante-s6q",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -4989,7 +4848,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "avante-s6z",
+									"_key": "avante-s6r",
 									"text": "当時のライバルがベルト駆動だったなかで、タミヤ伝統のシャフト駆動のまま効率を高めるため、細かいピッチのギアやユニバーサルシャフトを採用した。ギアボックスを外さずに中を点検できるメンテナンスハッチは、その後のタミヤの多くのRCカーに受け継がれている。一方で、壊れやすい金属のサスペンションや安定性の不足にも悩まされた。",
 									"marks": []
 								}
@@ -5003,7 +4862,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "avante-s70",
+									"_key": "avante-s6s",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -5017,7 +4876,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "avante-s71",
+									"_key": "avante-s6t",
 									"text": "「タミヤ車は遅い」という評判を変えるために開発され、テストチームとしてTRF(タミヤレーシングファクトリー)が作られた。販売は1年足らずで終わり、のちに未組み立てのキットが数十万円で取引されるほどの伝説になった。2011年2月、カーボンシャーシなどで弱点を直した「アバンテ(2011)」として復刻されている。",
 									"marks": []
 								}
@@ -5031,7 +4890,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "avante-s72",
+									"_key": "avante-s6u",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -5045,7 +4904,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "avante-s73",
+									"_key": "avante-s6v",
 									"text": "タミヤRCの歴史でいちばん語られるマシンを知りたい人に。",
 									"marks": []
 								}
@@ -5088,7 +4947,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-dragon-s74",
+									"_key": "thunder-dragon-s6w",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -5102,7 +4961,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-dragon-s75",
+									"_key": "thunder-dragon-s6x",
 									"text": "漫画『ラジコンボーイ』に登場した「ドラゴンシリーズ」を商品化した電動RCカー。1988年3月10日に発売され、キット価格は13,800円だった。",
 									"marks": []
 								}
@@ -5116,7 +4975,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-dragon-s76",
+									"_key": "thunder-dragon-s6y",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -5130,7 +4989,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-dragon-s77",
+									"_key": "thunder-dragon-s6z",
 									"text": "はじめは『月刊コロコロコミック』の誌上通販限定のボディだったが、前年のサンダーショットと同じシャーシに載せてキットになった。4WDのシャフト駆動で、ダブルウィッシュボーンのサスペンションにオイルダンパーを備える。",
 									"marks": []
 								}
@@ -5144,7 +5003,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-dragon-s78",
+									"_key": "thunder-dragon-s70",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -5158,7 +5017,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-dragon-s79",
+									"_key": "thunder-dragon-s71",
 									"text": "ドラゴンシリーズとして初のフルキットだ。1989年には1/14のクイックドライブ版が、2021年9月には特別企画の「サンダードラゴン(2021)」が発売されている。",
 									"marks": []
 								}
@@ -5172,7 +5031,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-dragon-s7a",
+									"_key": "thunder-dragon-s72",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -5186,7 +5045,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "thunder-dragon-s7b",
+									"_key": "thunder-dragon-s73",
 									"text": "『ラジコンボーイ』に夢中になった世代の人に。",
 									"marks": []
 								}
@@ -5229,7 +5088,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "grasshopper-ii-s7c",
+									"_key": "grasshopper-ii-s74",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -5243,7 +5102,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "grasshopper-ii-s7d",
+									"_key": "grasshopper-ii-s75",
 									"text": "ホーネットで改良されたシャーシをさらに改良して出た、グラスホッパーの後継モデル。1988年8月9日に発売され、キット価格は税抜7,400円だった。",
 									"marks": []
 								}
@@ -5257,7 +5116,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "grasshopper-ii-s7e",
+									"_key": "grasshopper-ii-s76",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -5271,7 +5130,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "grasshopper-ii-s7f",
+									"_key": "grasshopper-ii-s77",
 									"text": "丸みを帯びたボディはピンで留める方式になり、リアのサスペンションはホーネットと同じローリングリジッドになった。タイヤとホイールはファルコンと同じもので、後輪のグリップが上がっている。",
 									"marks": []
 								}
@@ -5285,7 +5144,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "grasshopper-ii-s7g",
+									"_key": "grasshopper-ii-s78",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -5299,7 +5158,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "grasshopper-ii-s7h",
+									"_key": "grasshopper-ii-s79",
 									"text": "1993年12月の時点でもタミヤの通常のラインナップに残っていて、初代と合わせて10年近く続いたロングセラーだった。限定モデルのスーパーGは、海外で人気が高かった。",
 									"marks": []
 								}
@@ -5313,7 +5172,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "grasshopper-ii-s7i",
+									"_key": "grasshopper-ii-s7a",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -5327,7 +5186,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "grasshopper-ii-s7j",
+									"_key": "grasshopper-ii-s7b",
 									"text": "グラスホッパーの系譜をたどりたい人に。",
 									"marks": []
 								}
@@ -5335,6 +5194,147 @@
 						}
 					],
 					"amazon_query": "タミヤ グラスホッパー2"
+				},
+				"taxonomies": {
+					"era": [
+						"boom"
+					],
+					"grade": [
+						"buggy"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
+				"id": "kit-scorcher",
+				"slug": "scorcher",
+				"status": "published",
+				"data": {
+					"title": "スコーチャー",
+					"model_number": "58075",
+					"release_year": 1988,
+					"released": "1988-12",
+					"scale": "1/10",
+					"tier": "deep",
+					"summary": "サンダーショットにオプションを標準装備した、上級の4WD。",
+					"curator_note": "フロントのダンパーが、ようやく2本になった。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "scorcher-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "scorcher-s7c",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "scorcher-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "scorcher-s7d",
+									"text": "サンダーショット系の4WDバギーに、オプションを加えて標準装備にした1/10の電動RCカー。1988年のクリスマス商戦に、バンキッシュとともに発売された。キット価格は22,000円だった。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "scorcher-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "scorcher-s7e",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "scorcher-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "scorcher-s7f",
+									"text": "フロントのダンパーを2本にし、前後にアンチロールバーを付けた。キャンバー角を調整できるアッパーアーム、ボールベアリング、ユニバーサルスイングシャフトも標準装備だ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "scorcher-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "scorcher-s7g",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "scorcher-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "scorcher-s7h",
+									"text": "ドラゴン三兄弟のボディも載せられた。2020年にはバンキッシュと同じ年に復刻されている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "scorcher-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "scorcher-s7i",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "scorcher-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "scorcher-s7j",
+									"text": "サンダーショット系の完成形を走らせたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ スコーチャー"
 				},
 				"taxonomies": {
 					"era": [
@@ -5490,147 +5490,6 @@
 				}
 			},
 			{
-				"id": "kit-egress",
-				"slug": "egress",
-				"status": "published",
-				"data": {
-					"title": "イグレス",
-					"model_number": "58079",
-					"release_year": 1989,
-					"released": "1989",
-					"scale": "1/10",
-					"tier": "recommended",
-					"summary": "アバンテ系の最上級。カーボンとチタンを惜しまず使った。",
-					"curator_note": "1989年の全日本選手権で4位に入った。",
-					"content": [
-						{
-							"_type": "block",
-							"_key": "egress-b0",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "egress-s7s",
-									"text": "どんなマシン",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "egress-b1",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "egress-s7t",
-									"text": "アバンテ系の最上級モデルとして、1989年の静岡ホビーショーで発表された電動ラジコンバギー。前年の全日本選手権で好成績を収めたアバンテ改良試作車を量産化したものだ。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "egress-b2",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "egress-s7u",
-									"text": "走らせどころ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "egress-b3",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "egress-s7v",
-									"text": "カーボンファイバーのシャーシやチタン合金のねじなど、航空機向けの素材をふんだんに使い、耐久性と剛性を高めた。オプション扱いだったボールデフやトルクスプリッター、ステアリングを軽くするレーシングステアも標準装備になった。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "egress-b4",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "egress-s7w",
-									"text": "タミヤRC史の中で",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "egress-b5",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "egress-s7x",
-									"text": "1989年の全日本選手権で4位に入ったが、高価になりすぎたことやバブル崩壊、トップフォースの登場で製造を終えた。2013年秋に「イグレス2013」として数量限定で再発売されている。",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "egress-b6",
-							"style": "h3",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "egress-s7y",
-									"text": "こんな人におすすめ",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "egress-b7",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "egress-s7z",
-									"text": "アバンテ系の頂点を手にしたい人に。",
-									"marks": []
-								}
-							]
-						}
-					],
-					"amazon_query": "タミヤ イグレス"
-				},
-				"taxonomies": {
-					"era": [
-						"boom"
-					],
-					"grade": [
-						"buggy"
-					],
-					"series": [
-						"vintage"
-					]
-				}
-			},
-			{
 				"id": "kit-fire-dragon",
 				"slug": "fire-dragon",
 				"status": "published",
@@ -5652,7 +5511,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "fire-dragon-s80",
+									"_key": "fire-dragon-s7s",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -5666,7 +5525,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "fire-dragon-s81",
+									"_key": "fire-dragon-s7t",
 									"text": "漫画『ラジコンボーイ』の「ドラゴンシリーズ」を商品化した4WDの電動RCカー。フルキットは1989年4月27日に発売され、キット価格は13,800円だった。",
 									"marks": []
 								}
@@ -5680,7 +5539,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "fire-dragon-s82",
+									"_key": "fire-dragon-s7u",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -5694,7 +5553,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "fire-dragon-s83",
+									"_key": "fire-dragon-s7v",
 									"text": "サンダーショットやサンダードラゴンと同じシャーシだが、ファイヤードラゴンだけはフロントのダンパーが左右独立になっている。",
 									"marks": []
 								}
@@ -5708,7 +5567,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "fire-dragon-s84",
+									"_key": "fire-dragon-s7w",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -5722,7 +5581,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "fire-dragon-s85",
+									"_key": "fire-dragon-s7x",
 									"text": "『月刊コロコロコミック』の読者投稿でグランプリを取った「ファイタードラゴン」がもとになっている。ミニ四駆の「ファイヤードラゴンJr.」は、1988年と1989年のジャパンカップで2年連続の全国総合優勝に輝いた。2008年3月に再発売されている。",
 									"marks": []
 								}
@@ -5736,7 +5595,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "fire-dragon-s86",
+									"_key": "fire-dragon-s7y",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -5750,7 +5609,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "fire-dragon-s87",
+									"_key": "fire-dragon-s7z",
 									"text": "ドラゴンシリーズをそろえたい人に。",
 									"marks": []
 								}
@@ -5758,6 +5617,147 @@
 						}
 					],
 					"amazon_query": "タミヤ ファイヤードラゴン"
+				},
+				"taxonomies": {
+					"era": [
+						"boom"
+					],
+					"grade": [
+						"buggy"
+					],
+					"series": [
+						"vintage"
+					]
+				}
+			},
+			{
+				"id": "kit-egress",
+				"slug": "egress",
+				"status": "published",
+				"data": {
+					"title": "イグレス",
+					"model_number": "58079",
+					"release_year": 1989,
+					"released": "1989-06",
+					"scale": "1/10",
+					"tier": "recommended",
+					"summary": "アバンテ系の最上級。カーボンとチタンを惜しまず使った。",
+					"curator_note": "1989年の全日本選手権で4位に入った。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "egress-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "egress-s80",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "egress-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "egress-s81",
+									"text": "アバンテ系の最上級モデルとして、1989年の静岡ホビーショーで発表された電動ラジコンバギー。前年の全日本選手権で好成績を収めたアバンテ改良試作車を量産化したものだ。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "egress-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "egress-s82",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "egress-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "egress-s83",
+									"text": "カーボンファイバーのシャーシやチタン合金のねじなど、航空機向けの素材をふんだんに使い、耐久性と剛性を高めた。オプション扱いだったボールデフやトルクスプリッター、ステアリングを軽くするレーシングステアも標準装備になった。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "egress-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "egress-s84",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "egress-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "egress-s85",
+									"text": "1989年の全日本選手権で4位に入ったが、高価になりすぎたことやバブル崩壊、トップフォースの登場で製造を終えた。2013年秋に「イグレス2013」として数量限定で再発売されている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "egress-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "egress-s86",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "egress-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "egress-s87",
+									"text": "アバンテ系の頂点を手にしたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ イグレス"
 				},
 				"taxonomies": {
 					"era": [
@@ -5920,7 +5920,7 @@
 					"title": "ニッサン スカイラインGT-Rニスモ(TA01)",
 					"model_number": "58099",
 					"release_year": 1991,
-					"released": "1991",
+					"released": "1991-10",
 					"scale": "1/10",
 					"tier": "deep",
 					"summary": "4WDツーリングカーの時代を開いたTA01シャーシの、初期の1台。",
@@ -6061,7 +6061,7 @@
 					"title": "TA03F PRO",
 					"model_number": "",
 					"release_year": 1996,
-					"released": "1996",
+					"released": "1996-06",
 					"scale": "1/10",
 					"tier": "deep",
 					"summary": "タミヤ初のベルト駆動による4WDのツーリングカーシャーシ。",
@@ -6202,7 +6202,7 @@
 					"title": "カルソニック・スカイラインGT-R(TL01)",
 					"model_number": "",
 					"release_year": 1997,
-					"released": "1997",
+					"released": "1997-05",
 					"scale": "1/10",
 					"tier": "recommended",
 					"summary": "入門用のTL-01シャーシで出た、カルソニックカラーのスカイライン。",
@@ -6625,7 +6625,7 @@
 					"title": "4×4モンスタートラック TXT-1",
 					"model_number": "58280",
 					"release_year": 2001,
-					"released": "2001",
+					"released": "2001-09",
 					"scale": "1/10",
 					"tier": "recommended",
 					"summary": "金属部品を多用した、タミヤの電動ビッグフットのフラッグシップ。",
@@ -6654,7 +6654,7 @@
 								{
 									"_type": "span",
 									"_key": "txt-1-s9l",
-									"text": "アメリカのクラッシャーレースを走るモンスタートラックをモデルにした、1/10の電動ビッグフット。2001年4月に発売され、キット価格は44,800円だった。",
+									"text": "アメリカのクラッシャーレースを走るモンスタートラックをモデルにした、1/10の電動ビッグフット。2001年9月に発売され、キット価格は44,800円だった。",
 									"marks": []
 								}
 							]
@@ -6907,7 +6907,7 @@
 					"title": "ツインデトネーター",
 					"model_number": "",
 					"release_year": 2003,
-					"released": "2003",
+					"released": "2003-12",
 					"scale": "1/10",
 					"tier": "deep",
 					"summary": "前後に1基ずつモーターを積んだ、ツインモーター4WDのモンスタートラック。",
@@ -7048,7 +7048,7 @@
 					"title": "ブラックフット エクストリーム",
 					"model_number": "",
 					"release_year": 2003,
-					"released": "2003",
+					"released": "2003-12",
 					"scale": "1/10",
 					"tier": "deep",
 					"summary": "ブラックフット系の後継。シャーシをワイルドダガー系に一新した。",
@@ -9022,7 +9022,7 @@
 					"title": "ネオ マイティフロッグ(DT-03シャーシ)",
 					"model_number": "58587",
 					"release_year": 2014,
-					"released": "2014-02",
+					"released": "2014-03",
 					"scale": "1/10",
 					"tier": "recommended",
 					"summary": "マイティフロッグでRCを始めた世代が、子どもと一緒に楽しめる2WDバギー。",
@@ -14740,7 +14740,7 @@
 								{
 									"_type": "span",
 									"_key": "k9r",
-									"text": "全車種名簿は、タミヤ公式サイトの「発売月製品一覧」(電動RCカー・エンジンRCカー)と、日本語版ウィキペディア「タミヤのRC製品一覧」(1976〜2009年、CC BY-SA 4.0)をもとにしています。月まで確かめられないものは年だけを載せ、ウィキペディアの各車種の記事などで月が分かったものは月まで載せています。",
+									"text": "全車種名簿は、タミヤ公式サイトの「発売月製品一覧」(電動RCカー・エンジンRCカー)と、日本語版ウィキペディア「タミヤのRC製品一覧」(1976〜2009年、CC BY-SA 4.0)をもとにしています。月まで確かめられないものは年だけを載せ、ウィキペディアの各車種の記事や、英語のファンデータベース「TamiyaBase」で月が分かったものは月まで載せています。",
 									"marks": []
 								}
 							]
