@@ -620,6 +620,9 @@ const year = new Date().getFullYear();
 					font-weight: var(--font-weight-heading);
 					letter-spacing: var(--tracking-snug);
 					text-wrap: balance;
+					/* 「ファイナルファンタジ/ー」のように語の途中や長音の前で折り返さない */
+					word-break: auto-phrase;
+					line-break: strict;
 					overflow-wrap: break-word;
 				}
 
