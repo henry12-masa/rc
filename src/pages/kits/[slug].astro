@@ -28,6 +28,8 @@ const amazonKit = amazonForGame(game);
 // 同じグレードの一覧と、作るための道具
 const grade = game.grades[0] ? gradeInfo(game.grades[0].slug) : null;
 const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().slice(0, 2)];
+// 見出しの最長の語(空白で区切った塊)の幅を全角1文字=1で見積もる。狭い画面で語の途中で折り返さないよう、文字の大きさをこれに合わせて下げる
+const titleEm = Math.max(...game.title.split(/\s+/).map((w) => [...w].reduce((n, c) => n + (/[\x20-\x7e]/.test(c) ? 0.6 : 1), 0)));
 ---
 
 <Base
@@ -42,7 +44,7 @@ const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().sli
 				<p class="eyebrow">
 					<a href="/kits">Machines</a> / {era && <a href={kitsUrl({ era: era.slug })}>{era.short}</a>}
 				</p>
-				<h1 class="intro__title game-head__title">{game.title}</h1>
+				<h1 class="intro__title game-head__title" style={`--title-em: ${titleEm.toFixed(1)}`}>{game.title}</h1>
 				{game.model && <p class="game-head__en">{game.model}</p>}
 				<p class="intro__lead">{game.summary}</p>
 			</div>
@@ -226,9 +228,14 @@ const extraLinks = [...(grade?.amazon ? [grade.amazon] : []), ...toolLinks().sli
 		color: var(--color-text);
 	}
 
+	.game-head__text {
+		container-type: inline-size;
+	}
+
 	.game-head__title {
 		max-width: none;
-		font-size: clamp(2rem, 1.4rem + 2.6vw, 3.25rem);
+		/* 最長の語が1行に収まる大きさまで下げる(下限1.375rem) */
+		font-size: max(1.375rem, min(clamp(2rem, 1.4rem + 2.6vw, 3.25rem), calc(97cqi / var(--title-em, 1))));
 		line-height: 1.2;
 	}
 
