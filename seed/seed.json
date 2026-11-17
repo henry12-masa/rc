@@ -12258,6 +12258,148 @@
 						"vintage"
 					]
 				}
+			},
+			{
+				"id": "kit-cheetah-2026",
+				"slug": "cheetah-2026",
+				"status": "published",
+				"data": {
+					"title": "ランボルギーニ・チーター(2026)",
+					"model_number": "58754",
+					"release_year": 2026,
+					"released": "2026-11",
+					"scale": "1/12",
+					"tier": "recommended",
+					"summary": "XR311ゆずりのトーションバー4輪独立。ランボルギーニの軍用プロトタイプが、1/12で帰ってきた。",
+					"curator_note": "モーターの後端縦置きと、水平に置いた4本のトーションバー。初代の基本構成をそのまま残している。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "cheetah-2026-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "cheetah-2026-sig",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "cheetah-2026-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "cheetah-2026-sih",
+									"text": "1978年にRC化されたランボルギーニ・チーターの復刻版。2026年11月14日ごろに発売された。実車は、ランボルギーニがアメリカのMTIと組んで開発し、1977年のショーで注目を集めた、前後にドアのないオープン4座のオフロード車。M151ジープなどの役割を引き継ぐ全地形対応の軍用車として作られたプロトタイプだった。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "cheetah-2026-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "cheetah-2026-sii",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "cheetah-2026-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "cheetah-2026-sij",
+									"text": "シャーシは、ジュラルミン板をコの字に曲げたチャンネル型フレーム。バッテリーを中央に縦置きし、車体の後端に縦置きした540モーターで後輪を駆動する、デフのない2WD。サスペンションはダブルウィッシュボーンの4輪独立で、水平に縦置きした4本の金属製トーションバースプリングは効きを調整できる。ギヤボックスは密閉式で、ギヤの組み替えで24:1・17:1・10:1の3種類のギヤ比を選べる。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "cheetah-2026-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "cheetah-2026-sik",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "cheetah-2026-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "cheetah-2026-sil",
+									"text": "タミヤ初の電動RCオフロードカー、XR311コンバットバギーのメカニズムを受け継いだ初代の構成を残しつつ、改良を加えた。ボディは強化樹脂製で、キャンバス風のルーフは耐衝撃性スチロール樹脂製。ウインチやジェリカン、スコップまで再現し、ドライバー人形も付く。ESCは別売りで、走らせるにはファインスペック 2.4G 電動RCドライブセットなどが要る。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "cheetah-2026-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "cheetah-2026-sim",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "cheetah-2026-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "cheetah-2026-sin",
+									"text": "XR311と並べて、1970年代のスケールオフロードRCを味わいたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ ランボルギーニ チーター RC"
+				},
+				"taxonomies": {
+					"era": [
+						"now"
+					],
+					"grade": [
+						"buggy",
+						"crawler"
+					],
+					"series": [
+						"vintage"
+					]
+				}
 			}
 		],
 		"posts": [
