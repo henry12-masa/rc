@@ -12260,6 +12260,148 @@
 				}
 			},
 			{
+				"id": "kit-countach-5000s-tt02",
+				"slug": "countach-5000s-tt02",
+				"status": "published",
+				"data": {
+					"title": "ランボルギーニ カウンタック 5000S(TT-02シャーシ)",
+					"model_number": "47527",
+					"release_year": 2026,
+					"released": "2026-11",
+					"scale": "1/10",
+					"tier": "recommended",
+					"summary": "1982年の改良型、5000Sを1/10で。ウェッジシェイプのスーパーカーを、TT-02で気軽に走らせる。",
+					"curator_note": "メッキのブラボーホイールと、ウインドウ用のマスキングステッカー。好みの色で仕上げやすい。",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "countach-5000s-tt02-b0",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "countach-5000s-tt02-sig",
+									"text": "どんなマシン",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "countach-5000s-tt02-b1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "countach-5000s-tt02-sih",
+									"text": "ランボルギーニ・カウンタックの改良型で、5リッターエンジンを積んで1982年に登場した5000Sを1/10で再現した特別企画商品。2026年11月21日ごろに発売された。カウンタックは1971年のジュネーブショーでプロトタイプが発表されたスーパーカーで、タミヤでは1978年6月に1/12のRCモデルが発売されている。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "countach-5000s-tt02-b2",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "countach-5000s-tt02-sii",
+									"text": "走らせどころ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "countach-5000s-tt02-b3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "countach-5000s-tt02-sij",
+									"text": "シャーシはシャフトドライブ4WDのTT-02。走行用バッテリーを左、540モーターを右に縦置きし、サスペンションは4輪ダブルウィッシュボーン、ダンパーは前後ともフリクション。ギヤ比はキット標準が8.27:1で、別売のピニオンと組み合わせて11.38:1〜7.28:1の10種類から選べる。ESCは別売りで、走らせるにはファインスペック 2.4G 電動RCドライブセットと送信機用の単3形電池4本が要る。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "countach-5000s-tt02-b4",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "countach-5000s-tt02-sik",
+									"text": "タミヤRC史の中で",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "countach-5000s-tt02-b5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "countach-5000s-tt02-sil",
+									"text": "ボディはポリカーボネート製で、ホイールアーチのカットとボディキャッチの穴開けは加工済み。リヤウイングとサイドミラーは樹脂製で、ウインカーやフォグランプ、テールランプには別売のLEDを組み込める。5穴のディッシュホイール「ブラボーホイール」はメッキパーツで、中空ゴム製のラジアルタイヤを履く。",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "countach-5000s-tt02-b6",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "countach-5000s-tt02-sim",
+									"text": "こんな人におすすめ",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "countach-5000s-tt02-b7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "countach-5000s-tt02-sin",
+									"text": "1970〜80年代のスーパーカーを、入門向けのTT-02で手軽に走らせたい人に。",
+									"marks": []
+								}
+							]
+						}
+					],
+					"amazon_query": "タミヤ カウンタック 5000S TT-02"
+				},
+				"taxonomies": {
+					"era": [
+						"now"
+					],
+					"grade": [
+						"onroad",
+						"special"
+					],
+					"series": [
+						"tt02"
+					]
+				}
+			},
+			{
 				"id": "kit-cheetah-2026",
 				"slug": "cheetah-2026",
 				"status": "published",
@@ -12281,7 +12423,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "cheetah-2026-sig",
+									"_key": "cheetah-2026-sio",
 									"text": "どんなマシン",
 									"marks": []
 								}
@@ -12295,7 +12437,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "cheetah-2026-sih",
+									"_key": "cheetah-2026-sip",
 									"text": "1978年にRC化されたランボルギーニ・チーターの復刻版。2026年11月14日ごろに発売された。実車は、ランボルギーニがアメリカのMTIと組んで開発し、1977年のショーで注目を集めた、前後にドアのないオープン4座のオフロード車。M151ジープなどの役割を引き継ぐ全地形対応の軍用車として作られたプロトタイプだった。",
 									"marks": []
 								}
@@ -12309,7 +12451,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "cheetah-2026-sii",
+									"_key": "cheetah-2026-siq",
 									"text": "走らせどころ",
 									"marks": []
 								}
@@ -12323,7 +12465,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "cheetah-2026-sij",
+									"_key": "cheetah-2026-sir",
 									"text": "シャーシは、ジュラルミン板をコの字に曲げたチャンネル型フレーム。バッテリーを中央に縦置きし、車体の後端に縦置きした540モーターで後輪を駆動する、デフのない2WD。サスペンションはダブルウィッシュボーンの4輪独立で、水平に縦置きした4本の金属製トーションバースプリングは効きを調整できる。ギヤボックスは密閉式で、ギヤの組み替えで24:1・17:1・10:1の3種類のギヤ比を選べる。",
 									"marks": []
 								}
@@ -12337,7 +12479,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "cheetah-2026-sik",
+									"_key": "cheetah-2026-sis",
 									"text": "タミヤRC史の中で",
 									"marks": []
 								}
@@ -12351,7 +12493,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "cheetah-2026-sil",
+									"_key": "cheetah-2026-sit",
 									"text": "タミヤ初の電動RCオフロードカー、XR311コンバットバギーのメカニズムを受け継いだ初代の構成を残しつつ、改良を加えた。ボディは強化樹脂製で、キャンバス風のルーフは耐衝撃性スチロール樹脂製。ウインチやジェリカン、スコップまで再現し、ドライバー人形も付く。ESCは別売りで、走らせるにはファインスペック 2.4G 電動RCドライブセットなどが要る。",
 									"marks": []
 								}
@@ -12365,7 +12507,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "cheetah-2026-sim",
+									"_key": "cheetah-2026-siu",
 									"text": "こんな人におすすめ",
 									"marks": []
 								}
@@ -12379,7 +12521,7 @@
 							"children": [
 								{
 									"_type": "span",
-									"_key": "cheetah-2026-sin",
+									"_key": "cheetah-2026-siv",
 									"text": "XR311と並べて、1970年代のスケールオフロードRCを味わいたい人に。",
 									"marks": []
 								}
