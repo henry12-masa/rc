@@ -1,0 +1,71 @@
+---
+// 姉妹サイト「塗り継ぐ」(模型用塗料の色番号対応表)への案内
+---
+
+<aside class="paint-guide" aria-label="RCカーのプラ部品を塗るときに">
+	<p class="paint-guide__head"><span class="paint-guide__site">塗り継ぐ</span>RCカーのプラ部品を塗るときに</p>
+	<ul class="paint-guide__list">
+		<li><a href="https://paint.napoblog.com/" class="paint-guide__link"><span class="paint-guide__name">色番号の対応表</span><span class="paint-guide__lead">タミヤ・Mr.カラー・ガイアカラーの番号を引く</span></a></li>
+		<li><a href="https://paint.napoblog.com/posts/tamiya-numbers" class="paint-guide__link"><span class="paint-guide__name">タミヤの塗料の番号の関係</span><span class="paint-guide__lead">LP・X・XF・TSの公式の互換表</span></a></li>
+		<li><a href="https://paint.napoblog.com/posts/paint-materials" class="paint-guide__link"><span class="paint-guide__name">プラスチック以外に塗れる塗料</span><span class="paint-guide__lead">金属やナイロン・PPに塗るときの下地</span></a></li>
+		<li><a href="https://paint.napoblog.com/posts/thinner-guide" class="paint-guide__link"><span class="paint-guide__name">うすめ液と筆の洗い方</span><span class="paint-guide__lead">塗料ごとに使ううすめ液</span></a></li>
+	</ul>
+	<p class="paint-guide__note">ポリカーボネートのボディに使う専用の塗料は、塗り継ぐの対応表には入っていません。</p>
+</aside>
+
+<style>
+	.paint-guide {
+		display: grid;
+		gap: var(--spacing-3);
+		margin-block: var(--spacing-8);
+		padding: var(--spacing-5);
+		border-radius: var(--radius-xl);
+		background: var(--color-surface);
+		box-shadow: inset 0 0 0 1px var(--color-border);
+	}
+	.paint-guide__head {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-2);
+		font-size: var(--font-size-sm);
+		font-weight: 600;
+	}
+	.paint-guide__site {
+		padding: 0 0.45rem;
+		border-radius: var(--radius-sm);
+		background: var(--color-fill);
+		font-size: 0.6875rem;
+		font-weight: 500;
+		color: var(--color-muted);
+	}
+	.paint-guide__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+		gap: var(--spacing-2);
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.paint-guide__link {
+		display: grid;
+		gap: 2px;
+		height: 100%;
+		padding: var(--spacing-3) var(--spacing-4);
+		border-radius: var(--radius-lg);
+		box-shadow: inset 0 0 0 1px var(--color-border);
+		color: var(--color-text);
+		text-decoration: none;
+	}
+	.paint-guide__link:hover {
+		background: var(--color-fill);
+	}
+	.paint-guide__name {
+		font-size: var(--font-size-sm);
+		font-weight: 600;
+	}
+	.paint-guide__lead,
+	.paint-guide__note {
+		font-size: var(--font-size-xs);
+		color: var(--color-muted);
+	}
+</style>

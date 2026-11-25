@@ -1,4 +1,5 @@
 ---
+import PaintGuide from "../../components/PaintGuide.astro";
 import { PortableText, Image } from "emdash/ui";
 import Base from "../../layouts/Base.astro";
 import KitCard from "../../components/KitCard.astro";
@@ -159,6 +160,7 @@ const titleEm = Math.max(...game.title.split(/\s+/).map((w) => [...w].reduce((n,
 					primary={amazonKit}
 					links={extraLinks}
 				/>
+				<PaintGuide />
 				{
 					sameYear.length > 0 && (
 						<div class="same-year">

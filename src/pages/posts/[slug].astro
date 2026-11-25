@@ -1,4 +1,5 @@
 ---
+import PaintGuide from "../../components/PaintGuide.astro";
 import {
 	getEmDashEntry,
 	getEmDashCollection,
@@ -243,6 +244,8 @@ const [contentHead, contentTail] = splitAtHeading((post.data.content ?? []) as a
 						<AdUnit kind="article" />
 						{contentTail.length > 0 && <PortableText value={contentTail} />}
 					</div>
+
+					<PaintGuide />
 
 					<section class="post-comments" aria-labelledby="comments-title">
 						<h2 id="comments-title" class="eyebrow">コメント</h2>
