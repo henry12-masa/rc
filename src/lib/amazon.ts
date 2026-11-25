@@ -1,7 +1,7 @@
 import { CHASSIS_GUIDE, GRADE_GUIDE, TOOLS } from "../../data/grades.mjs";
 
 /** Amazonアソシエイトのトラッキングid */
-export const AMAZON_TAG = "hitomi0303-22";
+export const AMAZON_TAG = "thiery-puramo-22"; // プラモ系5サイト共通(2026-11-25〜)。それまでは共通タグ hitomi0303-22
 
 export function amazonSearchUrl(query: string) {
 	return `https://www.amazon.co.jp/s?k=${encodeURIComponent(query)}&tag=${AMAZON_TAG}`;
